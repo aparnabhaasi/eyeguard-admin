@@ -128,7 +128,7 @@
 											</div>
 						
 								</div>
-
+								<div class="row">
 								<?php
 								$pdt = $_GET['product'];
 $q="SELECT * FROM `product` where category='men' and product = '$pdt' ";
@@ -141,7 +141,7 @@ $price= $row['actual_price'];
 
 
 ?>
-								<div class="row">
+								
 									<!-- /womens -->
 									<div class="col-md-3 product-men women_two shop-gd">
 										<div class="product-googles-info googles">

@@ -159,7 +159,7 @@
 									</div>
 									<div class="img-deal1">
 										<h3>Farenheit (Grey)</h3>
-										<a href="single.php">$575.00</a>
+										<a href="publicsingle.php">$575.00</a>
 									</div>
 									<div class="clearfix"></div>
 								</div>
@@ -169,7 +169,7 @@
 									</div>
 									<div class="col-xs-8 img-deal1">
 										<h3>Opium (Grey)</h3>
-										<a href="single.php">$325.00</a>
+										<a href="publicsingle.php">$325.00</a>
 									</div>
 									<div class="clearfix"></div>
 								</div>
@@ -179,7 +179,7 @@
 										</div>
 										<div class="col-xs-8 img-deal1">
 											<h3>Azmani Round</h3>
-											<a href="single.php">$725.00</a>
+											<a href="publicsingle.php">$725.00</a>
 										</div>
 										<div class="clearfix"></div>
 									</div>
@@ -189,7 +189,7 @@
 											</div>
 											<div class="col-xs-8 img-deal1">
 												<h3>Farenheit Oval</h3>
-												<a href="single.php">$325.00</a>
+												<a href="publicsingle.php">$325.00</a>
 											</div>
 											<div class="clearfix"></div>
 										</div>
@@ -211,6 +211,7 @@
 											</div>
 						
 								</div>
+								<div class="row">
 								<?php
 
 $q="SELECT * FROM `product` where category='woman'";
@@ -223,7 +224,7 @@ $price= $row['actual_price'];
 
 
 ?>
-								<div class="row">
+								
 									<!-- /womens -->
 									<div class="col-md-3 product-men women_two shop-gd">
 										<div class="product-googles-info googles">
@@ -243,7 +244,7 @@ $price= $row['actual_price'];
 														<div class="grid_meta">
 															<div class="product_price">
 																<h4>
-																	<a href="single.php"><?php echo $name ?></a>
+																	<a href="publicsingle.php"><?php echo $name ?></a>
 																</h4>
 																<div class="grid-price mt-2">
 																	<span class="money "><?php echo $price ?></span>
@@ -312,7 +313,7 @@ $price= $row['actual_price'];
 														<img src="images/s5.jpg" class="img-fluid" alt="">
 														<div class="men-cart-pro">
 															<div class="inner-men-cart-pro">
-																<a href="single.php" class="link-product-add-cart">Quick View</a>
+																<a href="publicsingle.php" class="link-product-add-cart">Quick View</a>
 															</div>
 														</div>
 														<span class="product-new-top">New</span>
@@ -323,7 +324,7 @@ $price= $row['actual_price'];
 															<div class="grid_meta">
 																<div class="product_price">
 																	<h4>
-																		<a href="single.php">Fastrack Aviator </a>
+																		<a href="publicsingle.php">Fastrack Aviator </a>
 																	</h4>
 																	<div class="grid-price mt-2">
 																		<span class="money ">$325.00</span>
@@ -387,7 +388,7 @@ $price= $row['actual_price'];
 														<img src="images/s6.jpg" class="img-fluid" alt="">
 														<div class="men-cart-pro">
 															<div class="inner-men-cart-pro">
-																<a href="single.php" class="link-product-add-cart">Quick View</a>
+																<a href="publicsingle.php" class="link-product-add-cart">Quick View</a>
 															</div>
 														</div>
 														<span class="product-new-top">New</span>
@@ -398,7 +399,7 @@ $price= $row['actual_price'];
 															<div class="grid_meta">
 																<div class="product_price">
 																	<h4>
-																		<a href="single.php">MARTIN Aviator </a>
+																		<a href="publicsingle.php">MARTIN Aviator </a>
 																	</h4>
 																	<div class="grid-price mt-2">
 																		<span class="money ">$425.00</span>
@@ -461,7 +462,7 @@ $price= $row['actual_price'];
 														<img src="images/s7.jpg" class="img-fluid" alt="">
 														<div class="men-cart-pro">
 															<div class="inner-men-cart-pro">
-																<a href="single.php" class="link-product-add-cart">Quick View</a>
+																<a href="publicsingle.php" class="link-product-add-cart">Quick View</a>
 															</div>
 														</div>
 														<span class="product-new-top">New</span>
@@ -472,7 +473,7 @@ $price= $row['actual_price'];
 															<div class="grid_meta">
 																<div class="product_price">
 																	<h4>
-																		<a href="single.php">Royal Son Aviator </a>
+																		<a href="publicsingle.php">Royal Son Aviator </a>
 																	</h4>
 																	<div class="grid-price mt-2">
 																		<span class="money ">$425.00</span>
@@ -535,7 +536,7 @@ $price= $row['actual_price'];
 														<img src="images/s8.jpg" class="img-fluid" alt="">
 														<div class="men-cart-pro">
 															<div class="inner-men-cart-pro">
-																<a href="single.php" class="link-product-add-cart">Quick View</a>
+																<a href="publicsingle.php" class="link-product-add-cart">Quick View</a>
 															</div>
 														</div>
 														<span class="product-new-top">New</span>
@@ -546,7 +547,7 @@ $price= $row['actual_price'];
 															<div class="grid_meta">
 																<div class="product_price">
 																	<h4>
-																		<a href="single.php">Irayz Butterfly </a>
+																		<a href="publicsingle.php">Irayz Butterfly </a>
 																	</h4>
 																	<div class="grid-price mt-2">
 																		<span class="money ">$281.00</span>
@@ -609,7 +610,7 @@ $price= $row['actual_price'];
 														<img src="images/s9.jpg" class="img-fluid" alt="">
 														<div class="men-cart-pro">
 															<div class="inner-men-cart-pro">
-																<a href="single.php" class="link-product-add-cart">Quick View</a>
+																<a href="publicsingle.php" class="link-product-add-cart">Quick View</a>
 															</div>
 														</div>
 														<span class="product-new-top">New</span>
@@ -620,7 +621,7 @@ $price= $row['actual_price'];
 															<div class="grid_meta">
 																<div class="product_price">
 																	<h4>
-																		<a href="single.php">Jerry Rectangular </a>
+																		<a href="publicsingle.php">Jerry Rectangular </a>
 																	</h4>
 																	<div class="grid-price mt-2">
 																		<span class="money ">$525.00</span>
@@ -683,7 +684,7 @@ $price= $row['actual_price'];
 														<img src="images/s10.jpg" class="img-fluid" alt="">
 														<div class="men-cart-pro">
 															<div class="inner-men-cart-pro">
-																<a href="single.php" class="link-product-add-cart">Quick View</a>
+																<a href="publicsingle.php" class="link-product-add-cart">Quick View</a>
 															</div>
 														</div>
 														<span class="product-new-top">New</span>
@@ -694,7 +695,7 @@ $price= $row['actual_price'];
 															<div class="grid_meta">
 																<div class="product_price">
 																	<h4>
-																		<a href="single.php">Herdy Wayfarer </a>
+																		<a href="publicsingle.php">Herdy Wayfarer </a>
 																	</h4>
 																	<div class="grid-price mt-2">
 																		<span class="money ">$325.00</span>

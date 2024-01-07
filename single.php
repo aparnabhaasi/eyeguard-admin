@@ -1,4 +1,441 @@
-<?php include 'userheader.php'?>
+
+<?php include 'connection.php'?>
+<!--
+	Author: W3layouts
+	Author URL: http://w3layouts.com
+	License: Creative Commons Attribution 3.0 Unported
+	License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<title>Goggles Ecommerce Category Bootstrap responsive Web Template | Single :: w3layouts</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="keywords" content="Goggles a Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<link href="css/login_overlay.css" rel='stylesheet' type='text/css' />
+	<link href="css/style6.css" rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" href="css/shop.css" type="text/css" />
+	<link rel="stylesheet" href="css/owl.carousel.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/owl.theme.css" type="text/css" media="all">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui1.css">
+	<link href="css/easy-responsive-tabs.css" rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+	<link href="css/style.css" rel='stylesheet' type='text/css' />
+	<link href="css/fontawesome-all.css" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800"
+	    rel="stylesheet">
+</head>
+
+<body>
+	<div class="banner-top container-fluid" id="home">
+		<!-- header -->
+		<header>
+			<div class="row">
+				<div class="col-md-3 top-info text-left mt-lg-4 mt-3">
+					<h6>Need Help</h6>
+					<ul>
+						<li ><i class="fas fa-phone"></i> Call</li>
+						<li class="number-phone mt-2">12345678099</li>
+					</ul>
+				</div>
+				<div class="col-md-6 logo-w3layouts text-center">
+					<h1 class="logo-w3layouts">
+						<a class="navbar-brand" href="index.html">
+							<img src="images/logo.png" alt="" width="200"> </a>
+					</h1>
+				</div>
+
+				<div class="col-md-3 top-info-cart text-right mt-lg-4">
+					<ul class="cart-inner-info">
+						<li class="button-log">
+							<a class="btn-open" href="#">
+								<span class="fa fa-user" aria-hidden="true"></span>
+							</a>
+						</li>
+						<li class="galssescart galssescart2 cart cart box_1">
+							<form action="#" method="post" class="last">
+								<input type="hidden" name="cmd" value="_cart">
+								<input type="hidden" name="display" value="1">
+								<button class="top_googles_cart" type="submit" name="submit" value="">
+									My Cart
+									<i class="fas fa-cart-arrow-down"></i>
+								</button>
+							</form>
+						</li>
+					</ul>
+					<!---->
+					<div class="overlay-login text-left">
+						<button type="button" class="overlay-close1">
+							<i class="fa fa-times" aria-hidden="true"></i>
+						</button>
+						<div class="wrap">
+							<h5 class="text-center mb-4">Login Now</h5>
+							<div class="login p-5 bg-dark mx-auto mw-100">
+								<form action="#" method="post">
+									<div class="form-group">
+										<label class="mb-2">Email address</label>
+										<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required="">
+										<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+									</div>
+									<div class="form-group">
+										<label class="mb-2">Password</label>
+										<input type="password" class="form-control" id="exampleInputPassword1" placeholder="" required="">
+									</div>
+									<div class="form-check mb-2">
+										<input type="checkbox" class="form-check-input" id="exampleCheck1">
+										<label class="form-check-label" for="exampleCheck1">Check me out</label>
+									</div>
+									<button type="submit" class="btn btn-primary submit mb-4">Sign In</button>
+
+								</form>
+							</div>
+							<!---->
+						</div>
+					</div>
+					<!---->
+				</div>
+			</div>
+			
+			<label class="top-log mx-auto"></label>
+			<nav class="navbar navbar-expand-lg navbar-light bg-light top-header mb-2">
+
+				<button class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+				    aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon">
+						
+					</span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav nav-mega mx-auto">
+						
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true"
+							    aria-expanded="false">
+								Eyeglassess
+							</a>
+							<ul class="dropdown-menu mega-menu ">
+								<li>
+									<div class="row">
+										<div class="col-md-4 media-list span4 text-left mb-4">
+											<h6> Select Category </h6>
+											<ul>
+												<li class="media-mini mt-3">
+													<a href="men.html">
+														<img src="images/man-s.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50%;">
+														MEN
+													</a>
+												</li>
+												<hr>												
+												<li class="">
+													<a href="woman.html">
+														<img src="images/woman-s.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50%;">
+														WOMEN
+													</a>
+												</li><hr>
+												<li>
+													<a href="kids.html">
+														<img src="images/kid-s.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50%;">
+														KIDS
+													</a>
+												</li>
+												
+												
+											</ul>
+										</div>
+										<div class="col-md-4 media-list span4 text-left mb-4">
+											<h6> Our Top Picks </h6>
+											<ul>
+												<li class="media-mini mt-3 mb-1">
+
+													<a href="shop.html">New Arrivals</a>
+												</li><hr>
+												<li class="mb-1">
+													<a href="shop.html">Unisex</a>
+												</li><hr>
+												<li class="mb-1">
+													<a href="shop.html">Computer Eyeglasses</a>
+												</li><hr>
+												<li class="mb-1">
+													<a href="shop.html">Tinted Eyeglasses</a>
+												</li>
+												
+											</ul>
+											
+
+										</div>
+										<div class="col-md-4 media-list span4 text-left mb-4">
+											<h6> Frame Type </h6>
+											<ul>
+												<li class="media-mini mt-3 mb-1">
+
+													<a href="shop.html">Rectangle Frames</a>
+												</li>
+												<li class="mb-1">
+													<a href="shop.html">Wayfarer Frames</a>
+												</li>
+												<li class="mb-1">
+													<a href="shop.html">Round Frames</a>
+												</li>
+												<li class="mb-1">
+													<a href="shop.html">Aviator Frames</a>
+												</li>
+												<li class="mb-1">
+													<a href="shop.html">Cat-Eye Frames</a>
+												</li>
+												<li class="mb-1">
+													<a href="shop.html">Rimless Frames</a>
+												</li>
+												<li class="mb-1">
+													<a href="shop.html">Halfrim Frames</a>
+												</li>
+												<li class="mb-1">
+													<a href="shop.html">Geometric Frames</a>
+												</li>
+											</ul>
+											
+
+										</div>
+										
+									</div>
+									<hr>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true"
+							    aria-expanded="false">
+								Sunglasses
+							</a>
+							<ul class="dropdown-menu mega-menu ">
+								<li>
+									<div class="row">
+										<div class="col-md-4 media-list span4 text-left mb-4">
+											<h6> Select Category </h6>
+											<ul>
+												<li class="media-mini mt-3">
+													<a href="men.html">
+														<img src="images/man-s.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50%;">
+														MEN
+													</a>
+												</li>
+												<hr>												
+												<li class="">
+													<a href="woman.html">
+														<img src="images/woman-s.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50%;">
+														WOMEN
+													</a>
+												</li><hr>
+												<li>
+													<a href="kids.html">
+														<img src="images/kid-s.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50%;">
+														KIDS
+													</a>
+												</li>
+												
+												
+											</ul>
+										</div>
+										
+										<div class="col-md-4 media-list span4 text-left mb-4">
+											<h6> Frame Type </h6>
+											<ul>
+												<li class="media-mini mt-3 mb-1">
+
+													<a href="shop.html">Rectangle Frames</a>
+												</li>
+												<li class="mb-1">
+													<a href="shop.html">Wayfarer Frames</a>
+												</li>
+												<li class="mb-1">
+													<a href="shop.html">Round Frames</a>
+												</li>
+												<li class="mb-1">
+													<a href="shop.html">Aviator Frames</a>
+												</li>
+												<li class="mb-1">
+													<a href="shop.html">Cat-Eye Frames</a>
+												</li>
+												<li class="mb-1">
+													<a href="shop.html">Rimless Frames</a>
+												</li>
+												<li class="mb-1">
+													<a href="shop.html">Halfrim Frames</a>
+												</li>
+												<li class="mb-1">
+													<a href="shop.html">Geometric Frames</a>
+												</li>
+											</ul>
+											
+
+										</div>
+										<div class="col-md-4 media-list span4 text-left">
+
+											<h6 > <a class="text-danger" href="shop.html">Shop Now</a> </h6>
+											<div class="media-mini mt-3">
+												<a href="shop.html">
+													<img src="images/sunglass-nav.jpg" class="img-fluid" alt="">
+												</a>
+											</div>
+
+										</div>
+									</div>
+									<hr>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true"
+							    aria-expanded="false">
+								Computer glasses
+							</a>
+							<ul class="dropdown-menu mega-menu ">
+								<li>
+									<div class="row">
+										<div class="col-md-4 media-list span4 text-left mb-4">
+											<h6> Select Category </h6>
+											<ul>
+												<li class="media-mini mt-3">
+													<a href="men.html">
+														<img src="images/man-s.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50%;">
+														MEN
+													</a>
+												</li>
+												<hr>												
+												<li class="">
+													<a href="woman.html">
+														<img src="images/woman-s.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50%;">
+														WOMEN
+													</a>
+												</li><hr>
+												<li>
+													<a href="kids.html">
+														<img src="images/kid-s.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50%;">
+														KIDS
+													</a>
+												</li>
+												
+												
+											</ul>
+										</div>
+										
+										<div class="col-md-4 media-list span4 text-left mb-4">
+											<h6> Frame Type </h6>
+											<ul>
+												<li class="media-mini mt-3 mb-1">
+
+													<a href="shop.html">Rectangle Frames</a>
+												</li>
+												<li class="mb-1">
+													<a href="shop.html">Wayfarer Frames</a>
+												</li>
+												<li class="mb-1">
+													<a href="shop.html">Round Frames</a>
+												</li>
+												<li class="mb-1">
+													<a href="shop.html">Aviator Frames</a>
+												</li>
+												<li class="mb-1">
+													<a href="shop.html">Cat-Eye Frames</a>
+												</li>
+												<li class="mb-1">
+													<a href="shop.html">Rimless Frames</a>
+												</li>
+												<li class="mb-1">
+													<a href="shop.html">Halfrim Frames</a>
+												</li>
+												<li class="mb-1">
+													<a href="shop.html">Geometric Frames</a>
+												</li>
+											</ul>
+											
+
+										</div>
+										<div class="col-md-4 media-list span4 text-left">
+
+											<h6 > <a class="text-danger" href="shop.html">Shop Now</a> </h6>
+											<div class="media-mini mt-3">
+												<a href="shop.html">
+													<img src="images/computerglass-nav.jpg" class="img-fluid" alt="">
+												</a>
+											</div>
+
+										</div>
+									</div>
+									<hr>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true"
+							    aria-expanded="false">
+								Contact lenses
+							</a>
+							<ul class="dropdown-menu mega-menu ">
+								<li>
+									<div class="row">
+										
+										
+										<div class="col-md-6 media-list span4 text-left mb-4">
+											<h6> Disposablity </h6>
+											<ul>
+												<li class="media-mini mt-3 mb-1">
+
+													<a href="shop.html">Daily Disposable</a>
+												</li><hr>
+												<li class="mb-1">
+													<a href="shop.html">Two Weekly Disposable</a>
+												</li><hr>
+												<li class="mb-1">
+													<a href="shop.html">Monthly Disposable</a>
+												</li><hr>
+												<li class="mb-1">
+													<a href="shop.html">Yearly Disposable</a>
+												</li>
+												
+											</ul>
+											
+
+										</div>
+										<div class="col-md-6 media-list span4 text-left">
+
+											<h6 > <a class="text-danger" href="shop.html">Shop Now</a> </h6>
+											<div class="media-mini mt-3">
+												<a href="shop.html">
+													<img src="images/contactlense-nav.jpg" class="img-fluid" alt="">
+												</a>
+											</div>
+
+										</div>
+									</div>
+									<hr>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">Contact</a>
+						</li>
+						
+					</ul>
+
+				</div>
+			</nav>
+		</header>
+		<!-- //header -->
 		<!--//banner -->
 		<!--/shop-->
 		<?php
@@ -39,7 +476,14 @@ $image2= $res[0]['product_image2'];
 $image3= $res[0]['product_image3'];
 $image4= $res[0]['product_image4'];
 }
+$q1 = "SELECT * FROM `package`";
+$res1 = select($q1);
 
+foreach($res1 as $row1)
+$id=$row1['package_id'];
+$title= $row1['title'];
+$package= $row1['package'];
+$prize= $row1['prize'];
 ?>
 		<section class="banner-bottom-wthreelayouts py-lg-5 py-3">
 			<div class="container">
@@ -51,13 +495,13 @@ $image4= $res[0]['product_image4'];
 					
 											<ul class="slides">
 												<li data-thumb="images/d2.jpg">
-													<div class="thumb-image"> <img src="images/d2.jpg" data-imagezoom="true" class="img-fluid" alt=" "> </div>
+													<div class="thumb-image"> <img src="<?php echo $image; ?>" data-imagezoom="true" class="img-fluid" alt=" "> </div>
 												</li>
 												<li data-thumb="images/d1.jpg">
-													<div class="thumb-image"> <img src="images/d1.jpg" data-imagezoom="true" class="img-fluid" alt=" "> </div>
+													<div class="thumb-image"> <img src="<?php echo $image2; ?>" data-imagezoom="true" class="img-fluid" alt=" "> </div>
 												</li>
 												<li data-thumb="images/d3.jpg">
-													<div class="thumb-image"> <img src="images/d3.jpg" data-imagezoom="true" class="img-fluid" alt=" "> </div>
+													<div class="thumb-image"> <img src="<?php echo $image3; ?>" data-imagezoom="true" class="img-fluid" alt=" "> </div>
 												</li>
 											</ul>
 											<div class="clearfix"></div>
@@ -73,8 +517,57 @@ $image4= $res[0]['product_image4'];
 									<p><?php echo $type; ?></p><br>
 
 									<div class="p-3">
-										<button class="btn btn-info w-100 py-3">SELECT LENSES</button>
+										<button class="btn btn-info w-100 py-3" data-toggle="modal" data-target="#exampleModalCenter">SELECT LENSES</button>
 									</div>
+
+  
+									<!-- Modal -->
+									<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Choose lens package</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <?php foreach($res1 as $row1) { ?>
+                    <div class="container d-fle">
+                        <div class="p-4 border">
+                            <p><?php echo $row1['title']; ?></p>
+                            <p><?php echo $row1['package']; ?> <?php echo $row1['prize']; ?></p>
+							<input type="hidden" id="" name="package_id" value="<?php echo $id?>">
+                            <button class="btn btn-primary buy-now" data-package="<?php echo $row1['title']; ?> - <?php echo $row1['package']; ?> <?php echo $row1['prize'];?>" package_id="<?php echo $row1['package_id']; ?>">Buy now</button>
+                        </div>
+                    </div>
+                <?php } ?>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<textarea id="selectedPackage" name="package" rows="4" cols="50"></textarea>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $(".buy-now").click(function() {
+            var packageDetails = $(this).attr('data-package');
+            var packageID = $(this).attr('data-package-id'); // Retrieve package ID
+            $("#selectedPackage").val(packageDetails);
+
+            // Set package ID to a hidden input field for passing to PHP
+            $("#hiddenPackageID").val(packageID);
+
+            $('#exampleModalCenter').modal('hide');
+        });
+    });
+</script>
+
+
 
 									<div class="container p-3">
 										<ul>
@@ -88,14 +581,8 @@ $image4= $res[0]['product_image4'];
 									
 									<div class="occasion-cart mt-3">
     <div class="googles single-item singlepage">
-        <?php
-        // Check if the user is logged in
-        if (!isset($_SESSION['user_id'])) {
-            // If not logged in, display the login form
-           alert("login to add products to cart");
-        } else {
-            // If logged in, display the Add to Cart form
-        ?>
+     
+
             <form action="add_cart.php?id=<?php echo $id; ?>&price=<?php echo $sprice; ?>" method="post">
                 <input type="hidden" name="id" value="<?php echo $id; ?>">
                 <input type="hidden" name="price" value="<?php echo $sprice; ?>">
@@ -103,7 +590,7 @@ $image4= $res[0]['product_image4'];
                     Add to Cart
                 </button>
             </form>
-        <?php } ?>
+    
     </div>
 </div>
 									</div>

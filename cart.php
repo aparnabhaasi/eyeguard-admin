@@ -17,11 +17,17 @@
   color: #dc4c64 !important;
 }
 </style>
-<?php
+
+<!-- cart + summary -->
+<section class="bg-light my-5">
+  <div class="container">
+    <div class="row">
+      <!-- cart -->
+	  <?php
 
 $user_id=$_SESSION['user_id'];
 
-    $qq="SELECT * from tbl_childcart inner join tbl_mastcart using(mastcart_id) inner join product using(product_id) where user_id='$user_id'";
+    $qq="SELECT * from tbl_childcart inner join tbl_mastcart using(mastcart_id) inner join product using(product_id) inner join package using(package_id) where user_id='$user_id'";
     $qqs=select($qq);
     foreach($qqs as $row)
     {
@@ -29,17 +35,16 @@ $user_id=$_SESSION['user_id'];
         $product= $row['product_name'];
         $image= $row['product_image'];
         $price= $row['tot_amount'];
+		$p_amount = isset($row['prize']) ? $row['prize'] : '';
+		
 
     ?>
-<!-- cart + summary -->
-<section class="bg-light my-5">
-  <div class="container">
-    <div class="row">
-      <!-- cart -->
       <div class="col-lg-9">
         <div class="card border shadow-0">
           <div class="m-4">
+			
             <h4 class="card-title mb-4">Your shopping cart</h4>
+			
             <div class="row gy-3 mb-4">
               <div class="col-lg-5">
                 <div class="me-lg-5">
@@ -62,7 +67,7 @@ $user_id=$_SESSION['user_id'];
                   </select>
                 </div>
                 <div class="">
-                  <text class="h6"><?php echo $price; ?></text> <br />
+                  <text class="h6"><?php echo $p_amount; ?></text> <br />
                   <!-- <small class="text-muted text-nowrap"> $460.00 / per item </small> -->
                 </div>
               </div>
@@ -83,10 +88,10 @@ $user_id=$_SESSION['user_id'];
 
           <div class="border-top pt-4 mx-4 mb-4">
             <p><i class="fas fa-truck text-muted fa-lg"></i> Free Delivery within 1-2 weeks</p>
-            <p class="text-muted">
+            <!-- <p class="text-muted">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
               aliquip
-            </p>
+            </p> -->
           </div>
         </div>
       </div><?php } ?>
@@ -110,11 +115,11 @@ $user_id=$_SESSION['user_id'];
           <div class="card-body">
             <div class="d-flex justify-content-between">
               <p class="mb-2" style="color:black">Total price:</p>
-              <p class="mb-2" style="color:black"><?php echo $price; ?></p>
+              <p class="mb-2" style="color:black"><?php echo $p_amount; ?></p>
             </div>
             <div class="d-flex justify-content-between">
               <p class="mb-2">Discount:</p>
-              <p class="mb-2 text-success">-$60.00</p>
+              <p class="mb-2 text-success"></p>
             </div>
             <div class="d-flex justify-content-between">
               <p class="mb-2">TAX:</p>
@@ -123,7 +128,7 @@ $user_id=$_SESSION['user_id'];
             <hr />
             <div class="d-flex justify-content-between">
               <p class="mb-2" style="color:black">Total price:</p>
-              <p class="mb-2 fw-bold" style="color:black"><?php echo $price; ?></p>
+              <p class="mb-2 fw-bold" style="color:black"><?php echo $p_amount; ?></p>
             </div>
 
             <div class="mt-3">

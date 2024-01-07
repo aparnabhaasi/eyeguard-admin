@@ -1,4 +1,4 @@
-<?php include 'publicheader.php';
+<?php include 'userheader.php';
 // Database connection details
 $servername = "localhost";
 $username = "root";
@@ -57,7 +57,7 @@ $conn->close();
 							<h3>Men’s eyewear
 								<span>Cool summer sale 50% off</span>
 							</h3>
-							<a href="publicshop.php" class="btn btn-sm animated-button gibson-three mt-4">Shop Now</a>
+							<a href="men.php" class="btn btn-sm animated-button gibson-three mt-4">Shop Now</a>
 						</div>
 					</div>
 					<div class="carousel-item item2">
@@ -65,7 +65,7 @@ $conn->close();
 							<h3>Women’s eyewear
 								<span>Want to Look Your Best?</span>
 							</h3>
-							<a href="publicshop.php" class="btn btn-sm animated-button gibson-three mt-4">Shop Now</a>
+							<a href="women.php" class="btn btn-sm animated-button gibson-three mt-4">Shop Now</a>
 
 						</div>
 					</div>
@@ -74,7 +74,7 @@ $conn->close();
 							<h3>Men’s eyewear
 								<span>Cool summer sale 50% off</span>
 							</h3>
-							<a href="publicshop.php" class="btn btn-sm animated-button gibson-three mt-4">Shop Now</a>
+							<a href="men.php" class="btn btn-sm animated-button gibson-three mt-4">Shop Now</a>
 
 						</div>
 					</div>
@@ -83,7 +83,7 @@ $conn->close();
 							<h3>Women’s eyewear
 								<span>Want to Look Your Best?</span>
 							</h3>
-							<a href="publicshop.php" class="btn btn-sm animated-button gibson-three mt-4">Shop Now</a>
+							<a href="women.php" class="btn btn-sm animated-button gibson-three mt-4">Shop Now</a>
 						</div>
 					</div>
 				</div>
@@ -111,7 +111,7 @@ $conn->close();
 					<h3>MEN'S
 						<span>EYE GLASS</span>
 					</h3>
-					<a href="publicmen.php"><p><strong>Shop Now</strong></p></a>
+					<a href="men.php"><p><strong>Shop Now</strong></p></a>
 				</figcaption>
 			</figure>
 		</div>
@@ -124,7 +124,7 @@ $conn->close();
 					<h3>WOMEN'S
 						<span>EYE GLASS</span>
 					</h3>
-					<a href="publicwomen.php"><p>Shop Now</p></a>
+					<a href="women.php"><p>Shop Now</p></a>
 				</figcaption>
 			</figure>
 		</div>
@@ -137,7 +137,7 @@ $conn->close();
 					<h3>KID'S
 						<span>EYE GLASS</span>
 					</h3>
-					<a href="publickids.php"><p>Shop Now</p></a>
+					<a href="kids.php"><p>Shop Now</p></a>
 				</figcaption>
 			</figure>
 		</div>
@@ -150,7 +150,7 @@ $conn->close();
 					<h3>SUN
 						<span>GLASS</span>
 					</h3>
-					<a href="publicsunglass.php"><p>Shop Now</p></a>
+					<a href="sunglass.php"><p>Shop Now</p></a>
 				</figcaption>
 			</figure>
 		</div>
@@ -171,7 +171,7 @@ $conn->close();
 									<img src="images/s1.jpg" class="img-fluid" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="publicsingle.php" class="link-product-add-cart">Quick View</a>
+											<a href="single.php" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
@@ -181,7 +181,7 @@ $conn->close();
 										<div class="grid_meta">
 											<div class="product_price">
 												<h4>
-													<a href="publicsingle.php">Farenheit (Grey)</a>
+													<a href="single.php">Farenheit (Grey)</a>
 												</h4>
 												<div class="grid-price mt-2">
 													<span class="money ">₹575.00</span>
@@ -242,7 +242,7 @@ $conn->close();
 									<img src="images/s2.jpg" class="img-fluid" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="publicsingle.php" class="link-product-add-cart">Quick View</a>
+											<a href="single.php" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
@@ -253,7 +253,7 @@ $conn->close();
 										<div class="grid_meta">
 											<div class="product_price">
 												<h4>
-													<a href="publicsingle.php">Opium (Grey)</a>
+													<a href="single.php">Opium (Grey)</a>
 												</h4>
 												<div class="grid-price mt-2">
 													<span class="money ">₹325.00</span>
@@ -314,7 +314,7 @@ $conn->close();
 									<img src="images/s3.jpg" class="img-fluid" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="publicsingle.php" class="link-product-add-cart">Quick View</a>
+											<a href="single.php" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
@@ -325,7 +325,7 @@ $conn->close();
 										<div class="grid_meta">
 											<div class="product_price">
 												<h4>
-													<a href="publicsingle.php">Kenneth Cole</a>
+													<a href="single.php">Kenneth Cole</a>
 												</h4>
 												<div class="grid-price mt-2">
 													<span class="money ">₹575.00</span>
@@ -385,7 +385,7 @@ $conn->close();
 									<img src="images/s4.jpg" class="img-fluid" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="publicsingle.php" class="link-product-add-cart">Quick View</a>
+											<a href="single.php" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
@@ -396,7 +396,7 @@ $conn->close();
 										<div class="grid_meta">
 											<div class="product_price">
 												<h4>
-													<a href="publicsingle.php">Farenheit Oval </a>
+													<a href="single.php">Farenheit Oval </a>
 												</h4>
 												<div class="grid-price mt-2">
 													<span class="money ">₹325.00</span>
@@ -462,7 +462,7 @@ $conn->close();
 									<img src="images/m1.jpg" class="img-fluid" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="publicsingle.php" class="link-product-add-cart">Quick View</a>
+											<a href="single.php" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
@@ -473,7 +473,7 @@ $conn->close();
 										<div class="grid_meta">
 											<div class="product_price">
 												<h4>
-													<a href="publicsingle.php">Aislin Wayfarer </a>
+													<a href="single.php">Aislin Wayfarer </a>
 												</h4>
 												<div class="grid-price mt-2">
 													<span class="money ">₹775.00</span>
@@ -533,7 +533,7 @@ $conn->close();
 									<img src="images/m2.jpg" class="img-fluid" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="publicsingle.php" class="link-product-add-cart">Quick View</a>
+											<a href="single.php" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
@@ -544,7 +544,7 @@ $conn->close();
 										<div class="grid_meta">
 											<div class="product_price">
 												<h4>
-													<a href="publicsingle.php">Azmani Round </a>
+													<a href="single.php">Azmani Round </a>
 												</h4>
 												<div class="grid-price mt-2">
 													<span class="money ">₹725.00</span>
@@ -604,7 +604,7 @@ $conn->close();
 									<img src="images/m3.jpg" class="img-fluid" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="publicsingle.php" class="link-product-add-cart">Quick View</a>
+											<a href="single.php" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
@@ -615,7 +615,7 @@ $conn->close();
 										<div class="grid_meta">
 											<div class="product_price">
 												<h4>
-													<a href="publicsingle.php">Farenheit Wayfarer</a>
+													<a href="single.php">Farenheit Wayfarer</a>
 												</h4>
 												<div class="grid-price mt-2">
 													<span class="money ">₹475.00</span>
@@ -675,7 +675,7 @@ $conn->close();
 									<img src="images/m4.jpg" class="img-fluid" alt="">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="publicsingle.php" class="link-product-add-cart">Quick View</a>
+											<a href="single.php" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
@@ -686,7 +686,7 @@ $conn->close();
 										<div class="grid_meta">
 											<div class="product_price">
 												<h4>
-													<a href="publicsingle.php">Fossil Wayfarer </a>
+													<a href="single.php">Fossil Wayfarer </a>
 												</h4>
 												<div class="grid-price mt-2">
 													<span class="money ">₹825.00</span>
@@ -767,7 +767,7 @@ $conn->close();
 													<img src="images/s5.jpg" class="img-fluid" alt="">
 													<div class="men-cart-pro">
 														<div class="inner-men-cart-pro">
-															<a href="publicsingle.php" class="link-product-add-cart">Quick View</a>
+															<a href="single.php" class="link-product-add-cart">Quick View</a>
 														</div>
 													</div>
 													<span class="product-new-top">New</span>
@@ -778,7 +778,7 @@ $conn->close();
 														<div class="grid_meta">
 															<div class="product_price">
 																<h4>
-																	<a href="publicsingle.php">Fastrack Aviator </a>
+																	<a href="single.php">Fastrack Aviator </a>
 																</h4>
 																<div class="grid-price mt-2">
 																	<span class="money ">₹325.00</span>
@@ -841,7 +841,7 @@ $conn->close();
 													<img src="images/s6.jpg" class="img-fluid" alt="">
 													<div class="men-cart-pro">
 														<div class="inner-men-cart-pro">
-															<a href="publicsingle.php" class="link-product-add-cart">Quick View</a>
+															<a href="single.php" class="link-product-add-cart">Quick View</a>
 														</div>
 													</div>
 													<span class="product-new-top">New</span>
@@ -852,7 +852,7 @@ $conn->close();
 														<div class="grid_meta">
 															<div class="product_price">
 																<h4>
-																	<a href="publicsingle.php">MARTIN Aviator </a>
+																	<a href="single.php">MARTIN Aviator </a>
 																</h4>
 																<div class="grid-price mt-2">
 																	<span class="money ">₹425.00</span>
@@ -915,7 +915,7 @@ $conn->close();
 													<img src="images/s7.jpg" class="img-fluid" alt="">
 													<div class="men-cart-pro">
 														<div class="inner-men-cart-pro">
-															<a href="publicsingle.php" class="link-product-add-cart">Quick View</a>
+															<a href="single.php" class="link-product-add-cart">Quick View</a>
 														</div>
 													</div>
 													<span class="product-new-top">New</span>
@@ -926,7 +926,7 @@ $conn->close();
 														<div class="grid_meta">
 															<div class="product_price">
 																<h4>
-																	<a href="publicsingle.php">Royal Son Aviator </a>
+																	<a href="single.php">Royal Son Aviator </a>
 																</h4>
 																<div class="grid-price mt-2">
 																	<span class="money ">₹425.00</span>
@@ -989,7 +989,7 @@ $conn->close();
 													<img src="images/s8.jpg" class="img-fluid" alt="">
 													<div class="men-cart-pro">
 														<div class="inner-men-cart-pro">
-															<a href="publicsingle.php" class="link-product-add-cart">Quick View</a>
+															<a href="single.php" class="link-product-add-cart">Quick View</a>
 														</div>
 													</div>
 													<span class="product-new-top">New</span>
@@ -1000,7 +1000,7 @@ $conn->close();
 														<div class="grid_meta">
 															<div class="product_price">
 																<h4>
-																	<a href="publicsingle.php">Irayz Butterfly </a>
+																	<a href="single.php">Irayz Butterfly </a>
 																</h4>
 																<div class="grid-price mt-2">
 																	<span class="money ">₹281.00</span>
@@ -1063,7 +1063,7 @@ $conn->close();
 													<img src="images/s9.jpg" class="img-fluid" alt="">
 													<div class="men-cart-pro">
 														<div class="inner-men-cart-pro">
-															<a href="publicsingle.php" class="link-product-add-cart">Quick View</a>
+															<a href="single.php" class="link-product-add-cart">Quick View</a>
 														</div>
 													</div>
 													<span class="product-new-top">New</span>
@@ -1074,7 +1074,7 @@ $conn->close();
 														<div class="grid_meta">
 															<div class="product_price">
 																<h4>
-																	<a href="publicsingle.php">Jerry Rectangular </a>
+																	<a href="single.php">Jerry Rectangular </a>
 																</h4>
 																<div class="grid-price mt-2">
 																	<span class="money ">₹525.00</span>
@@ -1137,7 +1137,7 @@ $conn->close();
 													<img src="images/s10.jpg" class="img-fluid" alt="">
 													<div class="men-cart-pro">
 														<div class="inner-men-cart-pro">
-															<a href="publicsingle.php" class="link-product-add-cart">Quick View</a>
+															<a href="single.php" class="link-product-add-cart">Quick View</a>
 														</div>
 													</div>
 													<span class="product-new-top">New</span>
@@ -1148,7 +1148,7 @@ $conn->close();
 														<div class="grid_meta">
 															<div class="product_price">
 																<h4>
-																	<a href="publicsingle.php">Herdy Wayfarer </a>
+																	<a href="single.php">Herdy Wayfarer </a>
 																</h4>
 																<div class="grid-price mt-2">
 																	<span class="money ">₹325.00</span>

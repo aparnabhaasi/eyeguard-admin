@@ -211,7 +211,7 @@
 											</div>
 						
 								</div>
-
+								<div class="row">
 								<?php
 								
 $q="SELECT * FROM `product`";
@@ -224,7 +224,7 @@ $price= $row['actual_price'];
 
 
 ?>
-								<div class="row">
+								
 									<!-- /womens -->
 									<div class="col-md-3 product-men women_two shop-gd">
 										<div class="product-googles-info googles">
@@ -243,10 +243,10 @@ $price= $row['actual_price'];
 														<div class="grid_meta">
 															<div class="product_price">
 																<h4>
-																	<a href="single.php">Farenheit (Grey)</a>
+																	<a href="single.php"><?php echo $name;?></a>
 																</h4>
 																<div class="grid-price mt-2">
-																	<span class="money ">₹575.00</span>
+																	<span class="money "><?php echo $price;?></span>
 																</div>
 															</div>
 															<ul class="stars">

@@ -1,6 +1,6 @@
 <?php
 session_start();
- include 'connection.php'?>
+include 'connection.php'?>
 
 <!DOCTYPE html>
 <html lang="zxx">
@@ -123,7 +123,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 				<div class="col-md-6 logo-w3layouts text-center">
 					<h1 class="logo-w3layouts">
-						<a class="navbar-brand" href="index.php">
+						<a class="navbar-brand" href="index.html">
 							<img src="images/logo.png" alt="" width="200"> </a>
 					</h1>
 				</div>
@@ -135,16 +135,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<span class="fa fa-user" aria-hidden="true"></span>
 							</a>
 						</li>
-						<li class="galssescart galssescart2 cart cart box_1">
-							<form action="#" method="post" class="last">
-								<input type="hidden" name="cmd" value="_cart">
-								<input type="hidden" name="display" value="1">
-								<button class="top_googles_cart" type="submit" name="submit" value="">
+						<!-- <li class="galssescart galssescart2 cart cart box_1">
+							
+								<a href="cart.php"><button class="" type="submit" name="submit" value="">
 									My Cart
 									<i class="fas fa-cart-arrow-down"></i>
-								</button>
-							</form>
-						</li>
+								</button></a>
+						
+						</li> -->
 					</ul>
 					<!---->
 					<div class="overlay-login text-left">
@@ -164,15 +162,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<label class="mb-2">Password</label>
 										<input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="" required="">
 									</div>
-									
-									<button type="submit" name="submit" class="btn btn-primary submit mb-4">Sign In</button>
 									<div class="form-check mb-2">
-										<!-- <input type="checkbox" class="form-check-input" id="exampleCheck1"> -->
-										<a href="register.php"><label class="form-check-label" for="exampleCheck1">Dont have an account?</label></a>
+										<input type="checkbox" class="form-check-input" id="exampleCheck1">
+										<label class="form-check-label" for="exampleCheck1">Check me out</label>
 									</div>
+									<button type="submit" name="submit" class="btn btn-primary submit mb-4">Sign In</button>
+
 								</form>
 							</div>
-							<!---->
+							<!-- -->
 						</div>
 					</div>
 					<!---->
@@ -230,16 +228,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											<ul>
 												<li class="media-mini mt-3 mb-1">
 
-													<a href="shop.php">New Arrivals</a>
+													<a href="publicshop.php">New Arrivals</a>
 												</li><hr>
 												<li class="mb-1">
-													<a href="shop.php">Unisex</a>
+													<a href="publicshop.php">Unisex</a>
 												</li><hr>
 												<li class="mb-1">
-													<a href="shop.php">Computer Eyeglasses</a>
+													<a href="publicshop.php">Computer Eyeglasses</a>
 												</li><hr>
 												<li class="mb-1">
-													<a href="shop.php">Tinted Eyeglasses</a>
+													<a href="publicshop.php">Tinted Eyeglasses</a>
 												</li>
 												
 											</ul>

@@ -12,7 +12,7 @@ if (isset($_POST['submit'])) {
         $_SESSION['user_id'] = $res[0]['user_id'];
 
         // Redirect to index.php after successful login
-        redirect('index.php');
+        redirect('userindex.php');
         exit;
     } else {
         echo "<script>alert('Invalid username and password.');</script>";

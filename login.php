@@ -1,23 +1,42 @@
-<?php 
-include 'publicheader.php';
+<?php
+session_start(); // Don't forget to start the session
 
-if (isset($_POST['submit'])) {
-    extract($_POST);
+if (isset($_POST["submit"])) {
+    $email = $_POST["email"];
+    $password = $_POST["password"];
 
-    $q = "SELECT * FROM users WHERE email='$email' AND password='$password'";
-    $res = select($q);
+    // connect with database
+    $conn = mysqli_connect("localhost", "root", "", "eyeglass");
 
-    if ($res && count($res) > 0) {
+    // check if credentials are okay, and email is verified
+    $sql = "SELECT * FROM users WHERE email = '" . $email . "'";
+    $result = mysqli_query($conn, $sql);
+
+    if ($result && mysqli_num_rows($result) > 0) {
         // Assuming 'user_id' is a column in your 'users' table
-        $_SESSION['user_id'] = $res[0]['user_id'];
+        $res = mysqli_fetch_assoc($result);
+        $_SESSION['user_id'] = $res['user_id'];
 
         // Redirect to index.php after successful login
-        redirect('userindex.php');
+        header('Location: userindex.php');
         exit;
-    } else {
-        echo "<script>alert('Invalid username and password.');</script>";
     }
-} else {
-    echo "<script>alert('Invalid request.');</script>";
+
+    if (mysqli_num_rows($result) == 0) {
+        die("Email not found.");
+    }
+
+    $user = mysqli_fetch_object($result);
+
+    if (!password_verify($password, $user->password)) {
+        die("Password is not correct");
+    }
+
+    if ($user->email_verified_at == null) {
+        die("Please verify your email <a href='email-verification.php?email=" . $email . "'>from here</a>");
+    }
+
+    echo "<p>Your login logic here</p>";
+    exit();
 }
 ?>

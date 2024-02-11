@@ -47,7 +47,7 @@ if (isset($_POST['submit']))
             $mail->Port = 587;
  
             //Recipients
-            $mail->setFrom('eyeguard.in@gmail.com', 'www.eyeguard.com');
+            $mail->setFrom('eyeguard.in@gmail.com', 'www.eyeguard.in');
  
             //Add a recipient
             $mail->addAddress($email, $name);

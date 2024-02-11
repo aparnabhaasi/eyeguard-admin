@@ -32,8 +32,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<link href="css/style.css" rel='stylesheet' type='text/css' />
 	<link href="css/fontawesome-all.css" rel="stylesheet">
 	<link href="//fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
-	<link href="//fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800"
-	    rel="stylesheet">
+	<link
+		href="//fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800"
+		rel="stylesheet">
 </head>
 
 <body>
@@ -45,7 +46,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<h6>Need Help</h6>
 					<ul>
 						<li>
-							<i class="fas fa-phone"></i> Call</li>
+							<i class="fas fa-phone"></i> Call
+						</li>
 						<li class="number-phone mt-3">12345678099</li>
 					</ul>
 				</div>
@@ -57,55 +59,36 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 
 				<div class="col-md-3 top-info-cart text-right mt-lg-4">
-					<ul class="cart-inner-info">
-						<li class="button-log">
-							<a class="btn-open" href="#">
-								<span class="fa fa-user" aria-hidden="true"></span>
-							</a>
-						</li>
-						<li class="galssescart galssescart2 cart cart box_1">
-							<form action="#" method="post" class="last">
-								<input type="hidden" name="cmd" value="_cart">
-								<input type="hidden" name="display" value="1">
-								<button class="top_googles_cart" type="submit" name="submit" value="">
-									My Cart
-									<i class="fas fa-cart-arrow-down"></i>
-								</button>
-							</form>
-						</li>
-					</ul>
-					<!---->
-					<div class="overlay-login text-left">
-						<button type="button" class="overlay-close1">
-							<i class="fa fa-times" aria-hidden="true"></i>
-						</button>
-						<div class="wrap">
-							<h5 class="text-center mb-4">Login Now</h5>
-							<div class="login p-5 bg-dark mx-auto mw-100">
-								<form action="#" method="post">
-									<div class="form-group">
-										<label class="mb-2">Email address</label>
-										<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required="">
-										<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-									</div>
-									<div class="form-group">
-										<label class="mb-2">Password</label>
-										<input type="password" class="form-control" id="exampleInputPassword1" placeholder="" required="">
-									</div>
-									<div class="form-check mb-2">
-										<input type="checkbox" class="form-check-input" id="exampleCheck1">
-										<label class="form-check-label" for="exampleCheck1">Check me out</label>
-									</div>
-									<button type="submit" class="btn btn-primary submit mb-4">Sign In</button>
+    <ul class="cart-inner-info">
+        <li class="button-log">
+            <div class="dropdown">
+                <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="fa fa-user" aria-hidden="true">
+                        <?php
+                        // Check if the username session variable is set
+                        if (isset($_SESSION['name'])) {
+                            echo $_SESSION['name'];
+                        }
+                        ?>
+                    </span>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="my_orders.php">Profile</a>
+                    <a class="dropdown-item" href="logout.php">Logout</a>
+                </div>
+            </div>
+        </li>
+        <li class="galssescart galssescart2 cart cart box_1">
+            <a href="cart.php">
+                <button class="" type="submit" name="submit" value="">
+                    My Cart
+                    <i class="fas fa-cart-arrow-down"></i>
+                </button>
+            </a>
+        </li>
+    </ul>
+</div>
 
-								</form>
-							</div>
-							<!---->
-						</div>
-					</div>
-					<!---->
-				</div>
-			</div>
 			<div class="search">
 				<div class="mobile-nav-button">
 					<button id="trigger-overlay" type="button">
@@ -130,10 +113,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<label class="top-log mx-auto"></label>
 			<nav class="navbar navbar-expand-lg navbar-light bg-light top-header mb-2">
 
-				<button class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-				    aria-expanded="false" aria-label="Toggle navigation">
+				<button class="navbar-toggler mx-auto" type="button" data-toggle="collapse"
+					data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+					aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon">
-						
+
 					</span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -147,8 +131,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<a class="nav-link" href="about.html">About</a>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-							    aria-expanded="false">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								Features
 							</a>
 							<ul class="dropdown-menu mega-menu ">
@@ -200,8 +184,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</ul>
 						</li>
 						<li class="nav-item dropdown active">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true"
-							    aria-expanded="false">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button"
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								Shop
 							</a>
 							<ul class="dropdown-menu mega-menu ">
@@ -321,151 +305,180 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<!--//banner -->
 	</div>
 	<?php include 'connection.php';
-// $q="insert into tbl_order values(null,'$masterid',curdate())";
+	// $q="insert into tbl_order values(null,'$masterid',curdate())";
 // $q1=insert($q);
-$mid=$_GET['mid'];
-$qr="select * from tbl_childcart inner join  tbl_mastcart using(mastcart_id) inner join product using(product_id) inner join package using(package_id)  where mastcart_id='$mid'";
-$hh=select($qr);
-foreach($hh as $row){
-	$product =$row['product_name'];
-	$price =$row['prize'];
+	$mid = $_GET['mid'];
+	$qr = "select * from tbl_childcart inner join  tbl_mastcart using(mastcart_id) inner join product using(product_id) inner join package using(package_id)  where mastcart_id='$mid'";
+	$hh = select($qr);
+	foreach ($hh as $row) {
+		$product = $row['product_name'];
+		$price = $row['prize'];
 
 
-?>
-	<!--// header_top -->
-	<!--checkout-->
-	<section class="banner-bottom-wthreelayouts py-lg-5 py-3">
-		<div class="container">
-			<div class="inner-sec-shop px-lg-4 px-3">
-				<h3 class="tittle-w3layouts my-lg-4 mt-3">Checkout </h3>
-				<div class="checkout-right">
-					<h4>Your shopping cart contains:
-						<span>3 Products</span>
-					</h4>
-					<table class="timetable_sub">
-						<thead>
-							<tr>
-								<th>SL No.</th>
-								<th>Product</th>
-								<th>Quantity</th>
-								<th>Product Name</th>
+		?>
+		<!--// header_top -->
+		<!--checkout-->
+		<section class="banner-bottom-wthreelayouts py-lg-5 py-3">
+			<div class="container">
+				<div class="inner-sec-shop px-lg-4 px-3">
+					<h3 class="tittle-w3layouts my-lg-4 mt-3">Checkout </h3>
+					<div class="checkout-right">
+						<h4>Your shopping cart contains:
+							<span>3 Products</span>
+						</h4>
+						<table class="timetable_sub">
+							<thead>
+								<tr>
+									<th>SL No.</th>
+									<th>Product</th>
+									<th>Quantity</th>
+									<th>Product Name</th>
 
-								<th>Price</th>
-								<th>Remove</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr class="rem1">
-								<td class="invert">1</td>
-								<td class="invert-image">
-									<a href="single.php">
-										<img src="images/s1.jpg" alt=" " class="img-responsive">
-									</a>
-								</td>
-								<td class="invert">
-									<div class="quantity">
-										<div class="quantity-select">
-											<div class="entry value-minus">&nbsp;</div>
-											<div class="entry value">
-												<span>1</span>
+									<th>Price</th>
+									<th>Remove</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="rem1">
+									<td class="invert">1</td>
+									<td class="invert-image">
+										<a href="single.php">
+											<img src="images/s1.jpg" alt=" " class="img-responsive">
+										</a>
+									</td>
+									<td class="invert">
+										<div class="quantity">
+											<div class="quantity-select">
+												<div class="entry value-minus">&nbsp;</div>
+												<div class="entry value">
+													<span>1</span>
+												</div>
+												<div class="entry value-plus active">&nbsp;</div>
 											</div>
-											<div class="entry value-plus active">&nbsp;</div>
 										</div>
-									</div>
-								</td>
-								<td class="invert"><?php echo $product;?></td>
+									</td>
+									<td class="invert">
+										<?php echo $product; ?>
+									</td>
 
-								<td class="invert"><?php echo $price;?></td>
-								<td class="invert">
-									<div class="rem">
-										<div class="close1"> </div>
-									</div>
+									<td class="invert">
+										<?php echo $price; ?>
+									</td>
+									<td class="invert">
+										<div class="rem">
+											<div class="close1"> </div>
+										</div>
 
-								</td>
-							</tr>
-							
-<?php } ?>
+									</td>
+								</tr>
+
+							<?php } ?>
 						</tbody>
 					</table>
 				</div>
 				<div class="col-md-4 checkout-left-basket">
-    <h4>Continue to basket</h4>
-    <ul>
-        <?php
-        $totalPrice = 0; // Initialize total price
-        foreach ($hh as $row) {
-            $product = $row['product_name'];
-            $price = $row['prize'];
-            $totalPrice += $price; // Accumulate total price
-
-            // Output each product as a list item
-            echo "<li>$product<i>-</i><span>$$price</span></li>";
-        }
-        // Additional charges and total
-        $serviceCharges = 55.00; // Sample service charges
-        $finalTotal = $totalPrice + $serviceCharges;
-        ?>
-        <li>Total Service Charges <i>-</i><span>$<?php echo $serviceCharges; ?></span></li>
-        <li>Total <i>-</i><span>$<?php echo $finalTotal; ?></span></li>
-    </ul>
-</div>
-
-					<div class="col-md-8 address_form">
-						<h4>Add a new Details</h4>
-						<form action="order.php" method="post" class="creditly-card-form agileinfo_form">
-							<input type="hidden" name="product" value="<?php echo $product;?>">
-							<input type="hidden" name="price" value="<?php echo $price;?>">
-							<input type="hidden" name="mid" value="<?php echo $mid;?>">
-							<section class="creditly-wrapper wrapper">
-								<div class="information-wrapper">
-									<div class="first-row form-group">
-										<div class="controls">
-											<label class="control-label">Full name: </label>
-											<input class="billing-address-name form-control" type="text" name="fname" placeholder="Full name">
-										</div>
-										<div class="card_number_grids">
-											<div class="card_number_grid_left">
-												<div class="controls">
-													<label class="control-label">Mobile number:</label>
-													<input class="form-control" type="text" name="phone" placeholder="Mobile number">
-												</div>
-											</div>
-											<div class="card_number_grid_right">
-												<div class="controls">
-													<label class="control-label">Landmark: </label>
-													<input class="form-control" type="text" name="landmark" placeholder="Landmark">
-												</div>
-											</div>
-											<div class="clear"> </div>
-										</div>
-										<div class="controls">
-											<label class="control-label">Town/City: </label>
-											<input class="form-control" type="text" name="town" placeholder="Town/City">
-										</div>
-										<div class="controls">
-											<label class="control-label">Address type: </label>
-											<select class="form-control option-w3ls" name="type">
-												<option>Office</option>
-												<option>Home</option>
-												<option>Commercial</option>
-
-											</select>
-										</div>
-									</div>
-									<button class="submit check_out" type="submit" name="submit">Delivery to this Address</button>
-								</div>
-							</section>
-						</form>
-						<div class="checkout-right-basket">
-							<a href="payment.php">Make a Payment </a>
-						</div>
-					</div>
-
-					<div class="clearfix"> </div>
-
+					<h4>Continue to basket</h4>
+					<ul>
+						<?php
+						$totalPrice = 0; // Initialize total price
+						foreach ($hh as $row) {
+							$product = $row['product_name'];
+							$price = $row['prize'];
+							$totalPrice += $price; // Accumulate total price
+						
+							// Output each product as a list item
+							echo "<li>$product<i>-</i><span>$$price</span></li>";
+						}
+						// Additional charges and total
+						$serviceCharges = 55.00; // Sample service charges
+						$finalTotal = $totalPrice + $serviceCharges;
+						?>
+						<li>Total Service Charges <i>-</i><span>$
+								<?php echo $serviceCharges; ?>
+							</span></li>
+						<li>Total <i>-</i><span>$
+								<?php echo $finalTotal; ?>
+							</span></li>
+					</ul>
 				</div>
 
+				<div class="col-md-8 address_form">
+					<h4>Add a new Details</h4>
+					<form action="order.php" method="post" class="creditly-card-form agileinfo_form" enctype="multipart/form-data">
+    <input type="hidden" name="product" value="<?php echo $product; ?>">
+    <input type="hidden" name="price" value="<?php echo $price; ?>">
+    <input type="hidden" name="mid" value="<?php echo $mid; ?>">
+    <section class="creditly-wrapper wrapper">
+        <div class="information-wrapper">
+            <div class="first-row form-group">
+                <div class="controls">
+                    <label class="control-label">Full name: </label>
+                    <input class="billing-address-name form-control" type="text" name="fname" placeholder="Full name" required>
+                </div>
+                <div class="card_number_grids">
+                    <div class="card_number_grid_left">
+                        <div class="controls">
+                            <label class="control-label">Mobile number:</label>
+                            <input class="form-control" type="text" name="phone" placeholder="Mobile number" required>
+                        </div>
+                    </div>
+                    <div class="card_number_grid_right">
+                        <div class="controls">
+                            <label class="control-label">Address </label>
+                            <input class="form-control" type="text" name="address" placeholder="Landmark" required>
+                        </div>
+                    </div>
+                    <div class="clear"> </div>
+                </div>
+                <div class="controls">
+                    <label class="control-label">Prescription Type</label>
+                    <select class="form-control" name="prescription_type" id="prescriptionType" required>
+                        <option value="text">Text</option>
+                        <option value="image">Image</option>
+                    </select>
+                </div>
+
+                <div class="controls prescription-text">
+                    <label class="control-label">Text Prescription</label>
+                    <input class="form-control" type="text" name="text_prescription" placeholder="Enter text prescription">
+                </div>
+
+                <div class="controls prescription-image" style="display: none;">
+                    <label class="control-label">Image Prescription</label>
+                    <input type="file" name="image_prescription">
+                </div>
+            </div>
+            <button class="submit check_out" type="submit" name="submit">Delivery to this Address</button>
+        </div>
+    </section>
+</form>
+
+<script>
+    // JavaScript to show/hide the file input based on the selected prescription type
+    document.getElementById('prescriptionType').addEventListener('change', function () {
+        var prescriptionText = document.querySelector('.prescription-text');
+        var prescriptionImage = document.querySelector('.prescription-image');
+
+        if (this.value === 'text') {
+            prescriptionText.style.display = 'block';
+            prescriptionImage.style.display = 'none';
+        } else if (this.value === 'image') {
+            prescriptionText.style.display = 'none';
+            prescriptionImage.style.display = 'block';
+        }
+    });
+</script>
+
+					<div class="checkout-right-basket">
+						<a href="payment.php">Make a Payment </a>
+					</div>
+				</div>
+
+				<div class="clearfix"> </div>
+
 			</div>
+
+		</div>
 
 		</div>
 	</section>
@@ -479,7 +492,8 @@ foreach($hh as $row){
 						<h3>About Us</h3>
 					</div>
 					<div class="footer-text">
-						<p>Curabitur non nulla sit amet nislinit tempus convallis quis ac lectus. lac inia eget consectetur sed, convallis at
+						<p>Curabitur non nulla sit amet nislinit tempus convallis quis ac lectus. lac inia eget
+							consectetur sed, convallis at
 							tellus. Nulla porttitor accumsana tincidunt.</p>
 						<ul class="footer-social text-left mt-lg-4 mt-3">
 
@@ -561,7 +575,8 @@ foreach($hh as $row){
 					<div class="footer-text">
 						<p>By subscribing to our mailing list you will always get latest news and updates from us.</p>
 						<form action="#" method="post">
-							<input class="form-control" type="email" name="Email" placeholder="Enter your email..." required="">
+							<input class="form-control" type="email" name="Email" placeholder="Enter your email..."
+								required="">
 							<button class="btn1">
 								<i class="far fa-envelope" aria-hidden="true"></i>
 							</button>
@@ -597,7 +612,7 @@ foreach($hh as $row){
 			if (this.subtotal() > 0) {
 				items = this.items();
 
-				for (i = 0, len = items.length; i < len; i++) {}
+				for (i = 0, len = items.length; i < len; i++) { }
 			}
 		});
 	</script>
@@ -702,35 +717,35 @@ foreach($hh as $row){
 	</script>
 	<!-- //dropdown nav -->
 	<script src="js/move-top.js"></script>
-    <script src="js/easing.js"></script>
-    <script>
-        jQuery(document).ready(function($) {
-            $(".scroll").click(function(event) {
-                event.preventDefault();
-                $('html,body').animate({
-                    scrollTop: $(this.hash).offset().top
-                }, 900);
-            });
-        });
-    </script>
-    <script>
-        $(document).ready(function() {
-            /*
-            						var defaults = {
-            							  containerID: 'toTop', // fading element id
-            							containerHoverID: 'toTopHover', // fading element hover id
-            							scrollSpeed: 1200,
-            							easingType: 'linear' 
-            						 };
-            						*/
+	<script src="js/easing.js"></script>
+	<script>
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 900);
+			});
+		});
+	</script>
+	<script>
+		$(document).ready(function () {
+			/*
+									var defaults = {
+										  containerID: 'toTop', // fading element id
+										containerHoverID: 'toTopHover', // fading element hover id
+										scrollSpeed: 1200,
+										easingType: 'linear' 
+									 };
+									*/
 
-            $().UItoTop({
-                easingType: 'easeOutQuart'
-            });
+			$().UItoTop({
+				easingType: 'easeOutQuart'
+			});
 
-        });
-    </script>
-    <!--// end-smoth-scrolling -->
+		});
+	</script>
+	<!--// end-smoth-scrolling -->
 
 
 	<script src="js/bootstrap.js"></script>

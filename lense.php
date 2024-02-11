@@ -1,61 +1,31 @@
-<?php include 'publicheader.php' ?>
+<?php include 'userheader.php' ?>
 
-<!-- banner -->
-<div class="banner_inner">
-	<div class="services-breadcrumb">
-		<div class="inner_breadcrumb">
-
-			<ul class="short">
-				<li>
-					<a href="index.php">Home</a>
-					<i>|</i>
-				</li>
-				<li>Shop</li>
-			</ul>
-		</div>
-	</div>
-
-</div>
-<!--//banner -->
 <!--/shop-->
 <section class="banner-bottom-wthreelayouts py-lg-5 py-3">
 	<div class="container-fluid">
 		<div class="inner-sec-shop px-lg-4 px-3">
-			<h3 class="tittle-w3layouts my-lg-4 mt-3">New Arrivals for you </h3>
+			<h3 class="tittle-w3layouts my-lg-4 mt-3">Lense Collections </h3>
 			<div class="row">
 				<!-- product left -->
 				<div class="side-bar col-lg-3">
 					<div class="search-hotel">
 						<h3 class="agileits-sear-head">Search Here..</h3>
 						<form action="#" method="post">
-							<input class="form-control" type="search" name="search" placeholder="Search here..."
-								required="">
-							<button class="btn1" type="submit" name="submit">
-								<i class="fas fa-search"></i>
-							</button>
-							<div class="clearfix"> </div>
-						</form>
+										<input class="form-control" type="search" name="search" placeholder="Search here..." required="">
+										<button class="btn1" type="submit" name="submit">
+												<i class="fas fa-search"></i>
+										</button>
+										<div class="clearfix"> </div>
+									</form>
 					</div>
-					<!-- price range -->
-					<div class="range">
-						<h3 class="agileits-sear-head">Price range</h3>
-						<ul class="dropdown-menu6">
-							<li>
 
-								<div id="slider-range"></div>
-								<input type="text" id="amount"
-									style="border: 0; color: #ffffff; font-weight: normal;" />
-							</li>
-						</ul>
-					</div>
-					<!-- //price range -->
 					<!--preference -->
 					<div class="left-side">
-						<h3 class="agileits-sear-head">Deal Offer On</h3>
+						<h3 class="agileits-sear-head">PRICE</h3>
 						<ul>
 							<li>
 								<input type="checkbox" class="checked">
-								<span class="span">500-1000</span>
+								<span class="span">Backpack</span>
 							</li>
 							<li>
 								<input type="checkbox" class="checked">
@@ -96,63 +66,7 @@
 						</ul>
 					</div>
 					<!-- //discounts -->
-					<!-- reviews -->
-					<div class="customer-rev left-side">
-						<h3 class="agileits-sear-head">Customer Review</h3>
-						<ul>
-							<li>
-								<a href="#">
-									<i class="fa fa-star" aria-hidden="true"></i>
-									<i class="fa fa-star" aria-hidden="true"></i>
-									<i class="fa fa-star" aria-hidden="true"></i>
-									<i class="fa fa-star" aria-hidden="true"></i>
-									<i class="fa fa-star" aria-hidden="true"></i>
-									<span>5.0</span>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<i class="fa fa-star" aria-hidden="true"></i>
-									<i class="fa fa-star" aria-hidden="true"></i>
-									<i class="fa fa-star" aria-hidden="true"></i>
-									<i class="fa fa-star" aria-hidden="true"></i>
-									<i class="fa fa-star-o" aria-hidden="true"></i>
-									<span>4.0</span>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<i class="fa fa-star" aria-hidden="true"></i>
-									<i class="fa fa-star" aria-hidden="true"></i>
-									<i class="fa fa-star" aria-hidden="true"></i>
-									<i class="fa fa-star-half-o" aria-hidden="true"></i>
-									<i class="fa fa-star-o" aria-hidden="true"></i>
-									<span>3.5</span>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<i class="fa fa-star" aria-hidden="true"></i>
-									<i class="fa fa-star" aria-hidden="true"></i>
-									<i class="fa fa-star" aria-hidden="true"></i>
-									<i class="fa fa-star-o" aria-hidden="true"></i>
-									<i class="fa fa-star-o" aria-hidden="true"></i>
-									<span>3.0</span>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<i class="fa fa-star" aria-hidden="true"></i>
-									<i class="fa fa-star" aria-hidden="true"></i>
-									<i class="fa fa-star-half-o" aria-hidden="true"></i>
-									<i class="fa fa-star-o" aria-hidden="true"></i>
-									<i class="fa fa-star-o" aria-hidden="true"></i>
-									<span>2.5</span>
-								</a>
-							</li>
-						</ul>
-					</div>
-					<!-- //reviews -->
+
 					<!-- deals -->
 					<div class="deal-leftmk left-side">
 						<h3 class="agileits-sear-head">Special Deals</h3>
@@ -162,40 +76,11 @@
 							</div>
 							<div class="img-deal1">
 								<h3>Farenheit (Grey)</h3>
-								<a href="publicsingle.php">$575.00</a>
+								<a href=" single.php">$575.00</a>
 							</div>
 							<div class="clearfix"></div>
 						</div>
-						<div class="special-sec1">
-							<div class="col-xs-4 img-deals">
-								<img src="images/s2.jpg" alt="">
-							</div>
-							<div class="col-xs-8 img-deal1">
-								<h3>Opium (Grey)</h3>
-								<a href="publicsingle.php">$325.00</a>
-							</div>
-							<div class="clearfix"></div>
-						</div>
-						<div class="special-sec1">
-							<div class="col-xs-4 img-deals">
-								<img src="images/m2.jpg" alt="">
-							</div>
-							<div class="col-xs-8 img-deal1">
-								<h3>Azmani Round</h3>
-								<a href="publicsingle.php">$725.00</a>
-							</div>
-							<div class="clearfix"></div>
-						</div>
-						<div class="special-sec1">
-							<div class="col-xs-4 img-deals">
-								<img src="images/m4.jpg" alt="">
-							</div>
-							<div class="col-xs-8 img-deal1">
-								<h3>Farenheit Oval</h3>
-								<a href="publicsingle.php">$325.00</a>
-							</div>
-							<div class="clearfix"></div>
-						</div>
+						
 					</div>
 					<!-- //deals -->
 				</div>
@@ -216,25 +101,22 @@
 						</div>
 						<div class="row">
 							<?php
-							if (isset($_POST['submit'])) {
-								$search = $_POST['search'];
-								$q = "SELECT * FROM `product` where category='woman'and  product like '%$search%'";
-							} else {
-								$q = "SELECT * FROM `product` where category='woman'";
-							}
-							// Check if sorting by price (ascending) is selected
-							if (isset($_POST['sort_price']) && $_POST['sort_price'] == 'on') {
-								$q .= " ORDER BY actual_price ASC";
-							}
-					
-							// Check if sorting by price (descending) is selected
-							if (isset($_POST['sort_price_desc']) && $_POST['sort_price_desc'] == 'on') {
-								$q .= " ORDER BY actual_price DESC";
-							}
+
+if(isset($_POST['submit'])){
+	$search = $_POST['search'];
+	$q="SELECT * FROM `product` where category='woman'and  product like '%$search%'";
+}
+
+       
+else{
+						
+								
+								$q = "SELECT * FROM `product` WHERE  product = 'contact lense'";
+}
 							$res = select($q);
 							foreach ($res as $row) {
 								$id = $row['product_id'];
-								$cat = $row['category'];
+
 								$name = $row['product_name'];
 								$price = $row['actual_price'];
 
@@ -249,15 +131,33 @@
 												<img src="images/s1.jpg" class="img-fluid" alt="">
 												<div class="men-cart-pro">
 													<div class="inner-men-cart-pro">
-														<a href="publicsingle.php?id=<?php echo $id; ?>&cat=<?php echo $cat; ?>"
-															class="link-product-add-cart">Quick View</a>
+														<a href=" header.php#login" class="link-product-add-cart">Quick
+															View</a>
 													</div>
-													<!-- Your existing HTML code -->
+													<script>
+														$(document).ready(function () {
+															// Function to show the login popup
+															function showLoginPopup() {
+																$(".overlay-login").fadeIn();
+															}
 
+															// Function to hide the login popup
+															function hideLoginPopup() {
+																$(".overlay-login").fadeOut();
+															}
 
+															// Event listener for the "Quick View" link
+															$(".link-product-add-cart").on("click", function (e) {
+																e.preventDefault();
+																showLoginPopup();
+															});
 
-													<!-- Your existing HTML code -->
-
+															// Event listener for the close button in the login popup
+															$(".overlay-close1").on("click", function () {
+																hideLoginPopup();
+															});
+														});
+													</script>
 												</div>
 												<span class="product-new-top">New</span>
 											</div>
@@ -266,7 +166,7 @@
 													<div class="grid_meta">
 														<div class="product_price">
 															<h4>
-																<a href="publicsingle.php">
+																<a href=" single.php">
 																	<?php echo $name ?>
 																</a>
 															</h4>
@@ -324,11 +224,12 @@
 								</div>
 							<?php } ?>
 
-							<!--/slide-->
-							<div class="slider-img mid-sec mt-lg-5 mt-2">
-								<!--//banner-sec-->
-								<h3 class="tittle-w3layouts text-left my-lg-4 my-3">Featured Products</h3>
-								<div class="mid-slider">
+
+						</div>
+					</div>
+				</div>
+				<h3 class="tittle-w3layouts text-left my-lg-4 my-3">Featured Products</h3>
+				<div class="mid-slider">
 									<div class="owl-carousel owl-theme row">
 										<?php
 										$q1 = "SELECT * FROM `product` where features='1'";
@@ -348,7 +249,7 @@
 																	<img src="images/s5.jpg" class="img-fluid" alt="">
 																	<div class="men-cart-pro">
 																		<div class="inner-men-cart-pro">
-																			<a href="publicsingle.php"
+																			<a href=" single.php"
 																				class="link-product-add-cart">Quick
 																				View</a>
 																		</div>
@@ -361,7 +262,7 @@
 																		<div class="grid_meta">
 																			<div class="product_price">
 																				<h4>
-																					<a href="publicsingle.php">
+																					<a href=" single.php">
 																						<?php echo $name; ?>
 																					</a>
 																				</h4>
@@ -433,11 +334,12 @@
 
 									</div>
 								</div>
-							</div>
-							<!--//slider-->
-						</div>
-					</div>
+			</div>
+			<!--//slider-->
+		</div>
+	</div>
 </section>
+<!--footer -->
 <!--footer -->
 <footer class="py-lg-5 py-3">
 	<div class="container-fluid px-lg-5 px-3">
@@ -516,7 +418,7 @@
 						<a href="404.php">Error</a>
 					</li>
 					<li>
-						<a href="shop.php">Shop</a>
+						<a href=" shop.php">Shop</a>
 					</li>
 					<li>
 						<a href="contact.php">Contact Us</a>

@@ -28,7 +28,7 @@
 								<h3 class="agileits-sear-head">Search Here..</h3>
 								<form action="#" method="post">
 										<input class="form-control" type="search" name="search" placeholder="Search here..." required="">
-										<button class="btn1">
+										<button class="btn1" type="submit" name="submit">
 												<i class="fas fa-search"></i>
 										</button>
 										<div class="clearfix"> </div>

@@ -1,6 +1,6 @@
 <?php
 session_start();
-include 'connection.php'?>
+include 'connection.php' ?>
 
 <!DOCTYPE html>
 <html lang="zxx">
@@ -30,85 +30,94 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<link href="css/style.css" rel='stylesheet' type='text/css' />
 	<link href="css/fontawesome-all.css" rel="stylesheet">
 	<link href="//fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
-	<link href="//fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800"
-	    rel="stylesheet">
+	<link
+		href="//fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800"
+		rel="stylesheet">
 </head>
 
 <body>
 	<style>
 		.galsses-grid-left {
-							position: relative;
-							overflow: hidden;
-							margin-bottom: 30px; /* Add margin at the bottom for spacing */
-						}
-					
-						.effect-lexi {
-							position: relative;
-						}
-					
-						.effect-lexi img {
-							display: block;
-							max-width: 100%;
-							height: auto;
-						}
-					
-						.effect-lexi figcaption {
-							position: absolute;
-							bottom: 0;
-							left: 0;
-							width: 100%;
-							padding: 20px;
-							color: #fff;
-							text-align: center;
-							z-index: 1; /* Ensure the text appears above the gradient */
-							box-sizing: border-box; /* Include padding in the width calculation */
-						}
-					
-						.overlay {
-							position: absolute;
-							top: 0;
-							left: 0;
-							width: 100%;
-							height: 100%;
-							background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
-							z-index: 0; /* Ensure the overlay is behind the text */
-						}
-					
-						.effect-lexi:hover figcaption {
-							transform: translateY(0);
-						}
-					
-						.effect-lexi h3,
-						.effect-lexi span,
-						.effect-lexi p {
-							margin: 0;
-						}
-					
-						.effect-lexi h3 {
-							font-size: 1.8em;
-						}
-					
-						.effect-lexi span {
-							display: block;
-							font-size: 0.7em;
-							margin-top: 5px;
-						}
-					
-						.effect-lexi p {
-							font-size: 1em;
-						}
+			position: relative;
+			overflow: hidden;
+			margin-bottom: 30px;
+			/* Add margin at the bottom for spacing */
+		}
 
-	@media (max-width: 767px) {
-        .galsses-grid-left span{
-            color: rgb(255, 255, 255) !important;
-        }
-		.galsses-grid-left span,h3{
-            font-size: smaller !important;
-        }
-		.carousel-caption h3 {
-            font-size: 30px !important; /* Adjust the font size as needed */
-        }
-    }
+		.effect-lexi {
+			position: relative;
+		}
+
+		.effect-lexi img {
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+
+		.effect-lexi figcaption {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			padding: 20px;
+			color: #fff;
+			text-align: center;
+			z-index: 1;
+			/* Ensure the text appears above the gradient */
+			box-sizing: border-box;
+			/* Include padding in the width calculation */
+		}
+
+		.overlay {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+			z-index: 0;
+			/* Ensure the overlay is behind the text */
+		}
+
+		.effect-lexi:hover figcaption {
+			transform: translateY(0);
+		}
+
+		.effect-lexi h3,
+		.effect-lexi span,
+		.effect-lexi p {
+			margin: 0;
+		}
+
+		.effect-lexi h3 {
+			font-size: 1.8em;
+		}
+
+		.effect-lexi span {
+			display: block;
+			font-size: 0.7em;
+			margin-top: 5px;
+		}
+
+		.effect-lexi p {
+			font-size: 1em;
+		}
+
+		@media (max-width: 767px) {
+			.galsses-grid-left span {
+				color: rgb(255, 255, 255) !important;
+			}
+
+			.galsses-grid-left span,
+			h3 {
+				font-size: smaller !important;
+			}
+
+			.carousel-caption h3 {
+				font-size: 30px !important;
+				/* Adjust the font size as needed */
+			}
+		}
 	</style>
 	<div class="banner-top container-fluid" id="home">
 		<!-- header -->
@@ -117,39 +126,55 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="col-md-3 top-info text-left mt-lg-4 mt-3">
 					<h6>Need Help</h6>
 					<ul>
-						<li ><i class="fas fa-phone"></i> Call</li>
+						<li><i class="fas fa-phone"></i> Call</li>
 						<li class="number-phone mt-2">12345678099</li>
 					</ul>
 				</div>
 				<div class="col-md-6 logo-w3layouts text-center">
 					<h1 class="logo-w3layouts">
-						<a class="navbar-brand" href="index.php">
+						<a class="navbar-brand" href="userindex.php">
 							<img src="images/logo.png" alt="" width="200"> </a>
 					</h1>
 				</div>
 
 				<div class="col-md-3 top-info-cart text-right mt-lg-4">
-					<ul class="cart-inner-info">
-						<li class="button-log">
-                        <a href="logout.php">
-								<span class="fa fa-user" aria-hidden="true"></span>
-							</a>
-						</li>
-						<li class="galssescart galssescart2 cart cart box_1">
-							
-								<a href="cart.php"><button class="" type="submit" name="submit" value="">
-									My Cart
-									<i class="fas fa-cart-arrow-down"></i>
-								</button></a>
-						
-						</li>
-					</ul>
-					<!---->
-					<div class="">
-						<!-- <button type="button" class="overlay-close1">
+    <ul class="cart-inner-info">
+        <li class="button-log">
+            <div class="dropdown">
+                <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="fa fa-user" aria-hidden="true">
+                        <?php
+                        // Check if the username session variable is set
+                        if (isset($_SESSION['name'])) {
+                            echo $_SESSION['name'];
+                        }
+                        ?>
+                    </span>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="profile.php">Profile</a>
+                    <a class="dropdown-item" href="logout.php">Logout</a>
+                </div>
+            </div>
+        </li>
+        <li class="galssescart galssescart2 cart cart box_1">
+            <a href="cart.php">
+                <button class="" type="submit" name="submit" value="">
+                    My Cart
+                    <i class="fas fa-cart-arrow-down"></i>
+                </button>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+				<!---->
+				<div class="">
+					<!-- <button type="button" class="overlay-close1">
 							<i class="fa fa-times" aria-hidden="true"></i>
 						</button></a> -->
-						<!-- <div class="wrap">
+					<!-- <div class="wrap">
 							<h5 class="text-center mb-4">Login Now</h5>
 							<div class="login p-5 bg-dark mx-auto mw-100">
 								<form action="login.php" method="post">
@@ -170,335 +195,381 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 								</form>
 							</div> -->
-							<!---->
-						</div>
-					</div>
 					<!---->
 				</div>
 			</div>
-			
-			<label class="top-log mx-auto"></label>
-			<nav class="navbar navbar-expand-lg navbar-light bg-light top-header mb-2">
+			<!---->
+	</div>
+	</div>
 
-				<button class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-				    aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon">
-						
-					</span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav nav-mega mx-auto">
-						
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true"
-							    aria-expanded="false">
-								Eyeglassess
-							</a>
-							<ul class="dropdown-menu mega-menu ">
-								<li>
-									<div class="row">
-										<div class="col-md-4 media-list span4 text-left mb-4">
-											<h6> Select Category </h6>
-											<ul>
-												<li class="media-mini mt-3">
-													<a href="men.php?product=eyeglass">
-														<img src="images/man-s.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50%;">
-														MEN
-													</a>
-												</li>
-												<hr>												
-												<li class="">
-													<a href="women.php?product=eyeglass">
-														<img src="images/woman-s.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50%;">
-														WOMEN
-													</a>
-												</li><hr>
-												<li>
-													<a href="kids.php?product=eyeglass">
-														<img src="images/kid-s.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50%;">
-														KIDS
-													</a>
-												</li>
-												
-												
-											</ul>
-										</div>
-										<div class="col-md-4 media-list span4 text-left mb-4">
-											<h6> Our Top Picks </h6>
-											<ul>
-												<li class="media-mini mt-3 mb-1">
+	<label class="top-log mx-auto"></label>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light top-header mb-2">
 
-													<a href="shop.php">New Arrivals</a>
-												</li><hr>
-												<li class="mb-1">
-													<a href="shop.php">Unisex</a>
-												</li><hr>
-												<li class="mb-1">
-													<a href="shop.php">Computer Eyeglasses</a>
-												</li><hr>
-												<li class="mb-1">
-													<a href="shop.php">Tinted Eyeglasses</a>
-												</li>
-												
-											</ul>
-											
+		<button class="navbar-toggler mx-auto" type="button" data-toggle="collapse"
+			data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+			aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon">
 
-										</div>
-										<div class="col-md-4 media-list span4 text-left mb-4">
-											<h6> Frame Type </h6>
-											<ul>
-												<li class="media-mini mt-3 mb-1">
+			</span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav nav-mega mx-auto">
 
-													<a href="shop.php">Rectangle Frames</a>
-												</li>
-												<li class="mb-1">
-													<a href="shop.php">Wayfarer Frames</a>
-												</li>
-												<li class="mb-1">
-													<a href="shop.php">Round Frames</a>
-												</li>
-												<li class="mb-1">
-													<a href="shop.php">Aviator Frames</a>
-												</li>
-												<li class="mb-1">
-													<a href="shop.php">Cat-Eye Frames</a>
-												</li>
-												<li class="mb-1">
-													<a href="shop.php">Rimless Frames</a>
-												</li>
-												<li class="mb-1">
-													<a href="shop.php">Halfrim Frames</a>
-												</li>
-												<li class="mb-1">
-													<a href="shop.php">Geometric Frames</a>
-												</li>
-											</ul>
-											
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Eyeglassess
+					</a>
+					<ul class="dropdown-menu mega-menu ">
+						<li>
+							<div class="row">
+								<div class="col-md-4 media-list span4 text-left mb-4">
+									<h6> Select Category </h6>
+									<ul>
+										<li class="media-mini mt-3">
+											<a href="men.php?product=eyeglass">
+												<img src="images/man-s.jpg" alt=""
+													style="width: 50px; height: 50px; border-radius: 50%;">
+												MEN
+											</a>
+										</li>
+										<hr>
+										<li class="">
+											<a href="women.php?product=eyeglass">
+												<img src="images/woman-s.jpg" alt=""
+													style="width: 50px; height: 50px; border-radius: 50%;">
+												WOMEN
+											</a>
+										</li>
+										<hr>
+										<li>
+											<a href="kids.php?product=eyeglass">
+												<img src="images/kid-s.jpg" alt=""
+													style="width: 50px; height: 50px; border-radius: 50%;">
+												KIDS
+											</a>
+										</li>
 
-										</div>
-										
-									</div>
-									<hr>
-								</li>
-							</ul>
+
+									</ul>
+								</div>
+								<div class="col-md-4 media-list span4 text-left mb-4">
+									<h6> Our Top Picks </h6>
+									<ul>
+										<li class="media-mini mt-3 mb-1">
+
+											<a href="#new" class="load-section">New Arrivals</a>
+										</li>
+										<hr>
+										<li class="mb-1">
+											<a href="#unisex" class="load-section">Unisex</a>
+										</li>
+										<script>
+											$(document).ready(function () {
+												$(".load-section").click(function (e) {
+													e.preventDefault(); // Prevent default link behavior
+
+													// Get the target section's ID from the link's href attribute
+													var targetId = $(this).attr("href");
+
+													// Scroll to the target section
+													$("html, body").animate({
+														scrollTop: $(targetId).offset().top
+													}, 1000); // You can adjust the duration as needed
+												});
+											});
+										</script>
+
+										<hr>
+										<li class="mb-1">
+											<a href="shop.php?product=computerglass">Computer
+												Eyeglasses</a>
+										</li>
+
+										<hr>
+										<li class="mb-1">
+											<a href="shop.php?product=sunglass">Tinted Eyeglasses</a>
+										</li>
+
+									</ul>
+
+
+								</div>
+								<div class="col-md-4 media-list span4 text-left mb-4">
+									<h6> Frame Type </h6>
+									<ul>
+										<li class="media-mini mt-3 mb-1">
+
+											<a href="shop.php?frameType=Rectangle Frame">Rectangle
+												Frames</a>
+										</li>
+										<li class="mb-1">
+											<a href="shop.php?frameType=Wayfarer Frames">Wayfarer
+												Frames</a>
+										</li>
+										<li class="mb-1">
+											<a href="shop.php?frameType=Round Frames">Round Frames</a>
+										</li>
+										<li class="mb-1">
+											<a href="shop.php?frameType=Aviator Frames">Aviator Frames</a>
+										</li>
+										<li class="mb-1">
+											<a href="shop.php?frameType=Cat-Eye Frames">Cat-Eye Frames</a>
+										</li>
+										<li class="mb-1">
+											<a href="shop.php?frameType=Rimless Frames">Rimless Frames</a>
+										</li>
+										<li class="mb-1">
+											<a href="shop.php?frameType=Halfrim Frames">Halfrim Frames</a>
+										</li>
+										<li class="mb-1">
+											<a href="shop.php?frameType=Geometric Frames">Geometric
+												Frames</a>
+										</li>
+									</ul>
+
+
+								</div>
+
+							</div>
+							<hr>
 						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true"
-							    aria-expanded="false">
-								Sunglasses
-							</a>
-							<ul class="dropdown-menu mega-menu ">
-								<li>
-									<div class="row">
-										<div class="col-md-4 media-list span4 text-left mb-4">
-											<h6> Select Category </h6>
-											<ul>
-												<li class="media-mini mt-3">
-													<a href="men.php?product=sunglass">
-														<img src="images/man-s.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50%;">
-														MEN
-													</a>
-												</li>
-												<hr>												
-												<li class="">
-													<a href="women.php?product=sunglass">
-														<img src="images/woman-s.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50%;">
-														WOMEN
-													</a>
-												</li><hr>
-												<li>
-													<a href="kids.php?product=sunglass">
-														<img src="images/kid-s.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50%;">
-														KIDS
-													</a>
-												</li>
-												
-												
-											</ul>
-										</div>
-										
-										<div class="col-md-4 media-list span4 text-left mb-4">
-											<h6> Frame Type </h6>
-											<ul>
-												<li class="media-mini mt-3 mb-1">
-
-													<a href="shop.php">Rectangle Frames</a>
-												</li>
-												<li class="mb-1">
-													<a href="shop.php">Wayfarer Frames</a>
-												</li>
-												<li class="mb-1">
-													<a href="shop.php">Round Frames</a>
-												</li>
-												<li class="mb-1">
-													<a href="shop.php">Aviator Frames</a>
-												</li>
-												<li class="mb-1">
-													<a href="shop.php">Cat-Eye Frames</a>
-												</li>
-												<li class="mb-1">
-													<a href="shop.php">Rimless Frames</a>
-												</li>
-												<li class="mb-1">
-													<a href="shop.php">Halfrim Frames</a>
-												</li>
-												<li class="mb-1">
-													<a href="shop.php">Geometric Frames</a>
-												</li>
-											</ul>
-											
-
-										</div>
-										<div class="col-md-4 media-list span4 text-left">
-
-											<h6 > <a class="text-danger" href="shop.php">Shop Now</a> </h6>
-											<div class="media-mini mt-3">
-												<a href="shop.php">
-													<img src="images/sunglass-nav.jpg" class="img-fluid" alt="">
-												</a>
-											</div>
-
-										</div>
-									</div>
-									<hr>
-								</li>
-							</ul>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true"
-							    aria-expanded="false">
-								Computer glasses
-							</a>
-							<ul class="dropdown-menu mega-menu ">
-								<li>
-									<div class="row">
-										<div class="col-md-4 media-list span4 text-left mb-4">
-											<h6> Select Category </h6>
-											<ul>
-												<li class="media-mini mt-3">
-													<a href="men.php?product=computerglass">
-														<img src="images/man-s.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50%;">
-														MEN
-													</a>
-												</li>
-												<hr>												
-												<li class="">
-													<a href="women.php?product=computerglass">
-														<img src="images/woman-s.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50%;">
-														WOMEN
-													</a>
-												</li><hr>
-												<li>
-													<a href="kids.php?product=computerglass">
-														<img src="images/kid-s.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50%;">
-														KIDS
-													</a>
-												</li>
-												
-												
-											</ul>
-										</div>
-										
-										<div class="col-md-4 media-list span4 text-left mb-4">
-											<h6> Frame Type </h6>
-											<ul>
-												<li class="media-mini mt-3 mb-1">
-
-													<a href="shop.php">Rectangle Frames</a>
-												</li>
-												<li class="mb-1">
-													<a href="shop.php">Wayfarer Frames</a>
-												</li>
-												<li class="mb-1">
-													<a href="shop.php">Round Frames</a>
-												</li>
-												<li class="mb-1">
-													<a href="shop.php">Aviator Frames</a>
-												</li>
-												<li class="mb-1">
-													<a href="shop.php">Cat-Eye Frames</a>
-												</li>
-												<li class="mb-1">
-													<a href="shop.php">Rimless Frames</a>
-												</li>
-												<li class="mb-1">
-													<a href="shop.php">Halfrim Frames</a>
-												</li>
-												<li class="mb-1">
-													<a href="shop.php">Geometric Frames</a>
-												</li>
-											</ul>
-											
-
-										</div>
-										<div class="col-md-4 media-list span4 text-left">
-
-											<h6 > <a class="text-danger" href="shop.php">Shop Now</a> </h6>
-											<div class="media-mini mt-3">
-												<a href="shop.php">
-													<img src="images/computerglass-nav.jpg" class="img-fluid" alt="">
-												</a>
-											</div>
-
-										</div>
-									</div>
-									<hr>
-								</li>
-							</ul>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true"
-							    aria-expanded="false">
-								Contact lenses
-							</a>
-							<ul class="dropdown-menu mega-menu ">
-								<li>
-									<div class="row">
-										
-										
-										<div class="col-md-6 media-list span4 text-left mb-4">
-											<h6> Disposablity </h6>
-											<ul>
-												<li class="media-mini mt-3 mb-1">
-
-													<a href="shop.php">Daily Disposable</a>
-												</li><hr>
-												<li class="mb-1">
-													<a href="shop.php">Two Weekly Disposable</a>
-												</li><hr>
-												<li class="mb-1">
-													<a href="shop.php">Monthly Disposable</a>
-												</li><hr>
-												<li class="mb-1">
-													<a href="shop.php">Yearly Disposable</a>
-												</li>
-												
-											</ul>
-											
-
-										</div>
-										<div class="col-md-6 media-list span4 text-left">
-
-											<h6 > <a class="text-danger" href="shop.php">Shop Now</a> </h6>
-											<div class="media-mini mt-3">
-												<a href="shop.php">
-													<img src="images/contactlense-nav.jpg" class="img-fluid" alt="">
-												</a>
-											</div>
-
-										</div>
-									</div>
-									<hr>
-								</li>
-							</ul>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="contact.php">Contact</a>
-						</li>
-						
 					</ul>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Sunglasses
+					</a>
+					<ul class="dropdown-menu mega-menu ">
+						<li>
+							<div class="row">
+								<div class="col-md-4 media-list span4 text-left mb-4">
+									<h6> Select Category </h6>
+									<ul>
+										<li class="media-mini mt-3">
+											<a href="men.php?product=sunglass">
+												<img src="images/man-s.jpg" alt=""
+													style="width: 50px; height: 50px; border-radius: 50%;">
+												MEN
+											</a>
+										</li>
+										<hr>
+										<li class="">
+											<a href="women.php?product=sunglass">
+												<img src="images/woman-s.jpg" alt=""
+													style="width: 50px; height: 50px; border-radius: 50%;">
+												WOMEN
+											</a>
+										</li>
+										<hr>
+										<li>
+											<a href="kids.php?product=sunglass">
+												<img src="images/kid-s.jpg" alt=""
+													style="width: 50px; height: 50px; border-radius: 50%;">
+												KIDS
+											</a>
+										</li>
 
-				</div>
-			</nav>
-		</header>
-		<!-- //header -->
+
+									</ul>
+								</div>
+
+								<div class="col-md-4 media-list span4 text-left mb-4">
+									<h6> Frame Type </h6>
+									<ul>
+										<li class="media-mini mt-3 mb-1">
+
+											<a href="shop.php?frameType=Rectangle Frame">Rectangle
+												Frames</a>
+										</li>
+										<li class="mb-1">
+											<a href="shop.php?frameType=Wayfarer Frames">Wayfarer
+												Frames</a>
+										</li>
+										<li class="mb-1">
+											<a href="shop.php?frameType=Round Frames">Round Frames</a>
+										</li>
+										<li class="mb-1">
+											<a href="shop.php?frameType=Aviator Frames">Aviator Frames</a>
+										</li>
+										<li class="mb-1">
+											<a href="shop.php?frameType=Cat-Eye Frames">Cat-Eye Frames</a>
+										</li>
+										<li class="mb-1">
+											<a href="shop.php?frameType=Rimless Frames">Rimless Frames</a>
+										</li>
+										<li class="mb-1">
+											<a href="shop.php?frameType=Halfrim Frames">Halfrim Frames</a>
+										</li>
+										<li class="mb-1">
+											<a href="shop.php?frameType=Geometric Frames">Geometric
+												Frames</a>
+										</li>
+									</ul>
+
+
+								</div>
+								<div class="col-md-4 media-list span4 text-left">
+
+									<h6> <a class="text-danger" href="shop.php?product=sunglass">Shop
+											Now</a> </h6>
+									<div class="media-mini mt-3">
+										<a href="shop.php">
+											<img src="images/sunglass-nav.jpg" class="img-fluid" alt="">
+										</a>
+									</div>
+
+								</div>
+							</div>
+							<hr>
+						</li>
+					</ul>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Computer glasses
+					</a>
+					<ul class="dropdown-menu mega-menu ">
+						<li>
+							<div class="row">
+								<div class="col-md-4 media-list span4 text-left mb-4">
+									<h6> Select Category </h6>
+									<ul>
+										<li class="media-mini mt-3">
+											<a href="men.php?product=computerglass">
+												<img src="images/man-s.jpg" alt=""
+													style="width: 50px; height: 50px; border-radius: 50%;">
+												MEN
+											</a>
+										</li>
+										<hr>
+										<li class="">
+											<a href="women.php?product=computerglass">
+												<img src="images/woman-s.jpg" alt=""
+													style="width: 50px; height: 50px; border-radius: 50%;">
+												WOMEN
+											</a>
+										</li>
+										<hr>
+										<li>
+											<a href="kids.php?product=computerglass">
+												<img src="images/kid-s.jpg" alt=""
+													style="width: 50px; height: 50px; border-radius: 50%;">
+												KIDS
+											</a>
+										</li>
+
+
+									</ul>
+								</div>
+
+								<div class="col-md-4 media-list span4 text-left mb-4">
+									<h6> Frame Type </h6>
+									<ul>
+										<li class="media-mini mt-3 mb-1">
+
+											<a href="shop.php?frameType=Rectangle Frame">Rectangle
+												Frames</a>
+										</li>
+										<li class="mb-1">
+											<a href="shop.php?frameType=Wayfarer Frames">Wayfarer
+												Frames</a>
+										</li>
+										<li class="mb-1">
+											<a href="shop.php?frameType=Round Frames">Round Frames</a>
+										</li>
+										<li class="mb-1">
+											<a href="shop.php?frameType=Aviator Frames">Aviator Frames</a>
+										</li>
+										<li class="mb-1">
+											<a href="shop.php?frameType=Cat-Eye Frames">Cat-Eye Frames</a>
+										</li>
+										<li class="mb-1">
+											<a href="shop.php?frameType=Rimless Frames">Rimless Frames</a>
+										</li>
+										<li class="mb-1">
+											<a href="shop.php?frameType=Halfrim Frames">Halfrim Frames</a>
+										</li>
+										<li class="mb-1">
+											<a href="shop.php?frameType=Geometric Frames">Geometric
+												Frames</a>
+										</li>
+									</ul>
+
+
+								</div>
+								<div class="col-md-4 media-list span4 text-left">
+
+									<h6> <a class="text-danger" href="shop.php?product=computerglass">Shop
+											Now</a> </h6>
+									<div class="media-mini mt-3">
+										<a href="shop.php">
+											<img src="images/computerglass-nav.jpg" class="img-fluid" alt="">
+										</a>
+									</div>
+
+								</div>
+							</div>
+							<hr>
+						</li>
+					</ul>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Contact lenses
+					</a>
+					<ul class="dropdown-menu mega-menu ">
+						<li>
+							<div class="row">
+
+
+								<!-- Disposability Links -->
+								<div class="col-md-6 media-list span4 text-left mb-4">
+									<h6> Disposability </h6>
+									<ul>
+										<li class="media-mini mt-3 mb-1">
+											<a href="lense.php?disposability=Daily">Daily Disposable</a>
+										</li>
+										<li class="mb-1">
+											<a href="lense.php?disposability=TwoWeekly">Two Weekly
+												Disposable</a>
+										</li>
+										<li class="mb-1">
+											<a href="lense.php?disposability=Monthly">Monthly
+												Disposable</a>
+										</li>
+										<li class="mb-1">
+											<a href="lense.php?disposability=Yearly">Yearly Disposable</a>
+										</li>
+									</ul>
+								</div>
+
+								<div class="col-md-6 media-list span4 text-left">
+
+									<h6> <a class="text-danger" href="lense.php">Shop Now</a> </h6>
+									<div class="media-mini mt-3">
+										<a href="shop.php">
+											<img src="images/contactlense-nav.jpg" class="img-fluid" alt="">
+										</a>
+									</div>
+
+								</div>
+							</div>
+							<hr>
+						</li>
+					</ul>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="contact.php">Contact</a>
+				</li>
+				
+
+			</ul>
+
+		</div>
+	</nav>
+	</header>
+	<!-- //header -->

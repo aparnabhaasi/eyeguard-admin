@@ -13,14 +13,17 @@ if (isset($_POST["submit"])) {
     $result = mysqli_query($conn, $sql);
 
     if ($result && mysqli_num_rows($result) > 0) {
-        // Assuming 'user_id' is a column in your 'users' table
         $res = mysqli_fetch_assoc($result);
         $_SESSION['user_id'] = $res['user_id'];
-
-        // Redirect to index.php after successful login
+        $_SESSION['name'] = $res['name'];
+    
+        // Debug statement
+        echo 'Name in session: ' . $_SESSION['name'];
+    
         header('Location: userindex.php');
         exit;
     }
+    
 
     if (mysqli_num_rows($result) == 0) {
         die("Email not found.");

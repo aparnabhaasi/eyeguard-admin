@@ -6,6 +6,6 @@ session_start(); // Ensure sessions are started
 unset($_SESSION['user_id']); // Unset the user_id session variable (or any other relevant variables)
 
 // Redirect to a logout success page or any desired location
-header("Location: publicindex.php"); // Redirect to a logout success page
+header("Location: index.php"); // Redirect to a logout success page
 exit;
 ?>

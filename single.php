@@ -61,54 +61,36 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 
 				<div class="col-md-3 top-info-cart text-right mt-lg-4">
-					<ul class="cart-inner-info">
-						<li class="button-log">
-							<a class="btn-open" href="#">
-								<span class="fa fa-user" aria-hidden="true"></span>
-							</a>
-						</li>
-						<li class="galssescart galssescart2 cart cart box_1">
-							<form action="#" method="post" class="last">
-								<input type="hidden" name="cmd" value="_cart">
-								<input type="hidden" name="display" value="1">
-								<button class="top_googles_cart" type="submit" name="submit" value="">
-									My Cart
-									<i class="fas fa-cart-arrow-down"></i>
-								</button>
-							</form>
-						</li>
-					</ul>
-					<!---->
-					<div class="overlay-login text-left">
-						<button type="button" class="overlay-close1">
-							<i class="fa fa-times" aria-hidden="true"></i>
-						</button>
-						<div class="wrap">
-							<h5 class="text-center mb-4">Login Now</h5>
-							<div class="login p-5 bg-dark mx-auto mw-100">
-								<form action="#" method="post">
-									<div class="form-group">
-										<label class="mb-2">Email address</label>
-										<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required="">
-										<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-									</div>
-									<div class="form-group">
-										<label class="mb-2">Password</label>
-										<input type="password" class="form-control" id="exampleInputPassword1" placeholder="" required="">
-									</div>
-									<div class="form-check mb-2">
-										<input type="checkbox" class="form-check-input" id="exampleCheck1">
-										<label class="form-check-label" for="exampleCheck1">Check me out</label>
-									</div>
-									<button type="submit" class="btn btn-primary submit mb-4">Sign In</button>
+    <ul class="cart-inner-info">
+        <li class="button-log">
+            <div class="dropdown">
+                <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="fa fa-user" aria-hidden="true">
+                        <?php
+                        // Check if the username session variable is set
+                        if (isset($_SESSION['name'])) {
+                            echo $_SESSION['name'];
+                        }
+                        ?>
+                    </span>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="my_orders.php">Profile</a>
+                    <a class="dropdown-item" href="logout.php">Logout</a>
+                </div>
+            </div>
+        </li>
+        <li class="galssescart galssescart2 cart cart box_1">
+            <a href="cart.php">
+                <button class="" type="submit" name="submit" value="">
+                    My Cart
+                    <i class="fas fa-cart-arrow-down"></i>
+                </button>
+            </a>
+        </li>
+    </ul>
+</div>
 
-								</form>
-							</div>
-							<!---->
-						</div>
-					</div>
-					<!---->
-				</div>
 			</div>
 			
 			<label class="top-log mx-auto"></label>
@@ -122,10 +104,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</button>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav nav-mega mx-auto">
-						
+
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true"
-							    aria-expanded="false">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button"
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								Eyeglassess
 							</a>
 							<ul class="dropdown-menu mega-menu ">
@@ -135,26 +117,30 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											<h6> Select Category </h6>
 											<ul>
 												<li class="media-mini mt-3">
-													<a href="men.html">
-														<img src="images/man-s.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50%;">
+													<a href="men.php?product=eyeglass">
+														<img src="images/man-s.jpg" alt=""
+															style="width: 50px; height: 50px; border-radius: 50%;">
 														MEN
 													</a>
 												</li>
-												<hr>												
+												<hr>
 												<li class="">
-													<a href="woman.html">
-														<img src="images/woman-s.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50%;">
+													<a href="women.php?product=eyeglass">
+														<img src="images/woman-s.jpg" alt=""
+															style="width: 50px; height: 50px; border-radius: 50%;">
 														WOMEN
 													</a>
-												</li><hr>
+												</li>
+												<hr>
 												<li>
-													<a href="kids.html">
-														<img src="images/kid-s.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50%;">
+													<a href="kids.php?product=eyeglass">
+														<img src="images/kid-s.jpg" alt=""
+															style="width: 50px; height: 50px; border-radius: 50%;">
 														KIDS
 													</a>
 												</li>
-												
-												
+
+
 											</ul>
 										</div>
 										<div class="col-md-4 media-list span4 text-left mb-4">
@@ -162,20 +148,41 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											<ul>
 												<li class="media-mini mt-3 mb-1">
 
-													<a href="shop.html">New Arrivals</a>
-												</li><hr>
-												<li class="mb-1">
-													<a href="shop.html">Unisex</a>
-												</li><hr>
-												<li class="mb-1">
-													<a href="shop.html">Computer Eyeglasses</a>
-												</li><hr>
-												<li class="mb-1">
-													<a href="shop.html">Tinted Eyeglasses</a>
+													<a href="#new" class="load-section">New Arrivals</a>
 												</li>
-												
+												<hr>
+												<li class="mb-1">
+													<a href="#unisex" class="load-section">Unisex</a>
+												</li>
+												<script>
+													$(document).ready(function () {
+														$(".load-section").click(function (e) {
+															e.preventDefault(); // Prevent default link behavior
+
+															// Get the target section's ID from the link's href attribute
+															var targetId = $(this).attr("href");
+
+															// Scroll to the target section
+															$("html, body").animate({
+																scrollTop: $(targetId).offset().top
+															}, 1000); // You can adjust the duration as needed
+														});
+													});
+												</script>
+
+												<hr>
+												<li class="mb-1">
+													<a href="shop.php?product=computerglass">Computer
+														Eyeglasses</a>
+												</li>
+
+												<hr>
+												<li class="mb-1">
+													<a href="shop.php?product=sunglass">Tinted Eyeglasses</a>
+												</li>
+
 											</ul>
-											
+
 
 										</div>
 										<div class="col-md-4 media-list span4 text-left mb-4">
@@ -183,42 +190,45 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											<ul>
 												<li class="media-mini mt-3 mb-1">
 
-													<a href="shop.html">Rectangle Frames</a>
+													<a href="shop.php?frameType=Rectangle Frame">Rectangle
+														Frames</a>
 												</li>
 												<li class="mb-1">
-													<a href="shop.html">Wayfarer Frames</a>
+													<a href="shop.php?frameType=Wayfarer Frames">Wayfarer
+														Frames</a>
 												</li>
 												<li class="mb-1">
-													<a href="shop.html">Round Frames</a>
+													<a href="shop.php?frameType=Round Frames">Round Frames</a>
 												</li>
 												<li class="mb-1">
-													<a href="shop.html">Aviator Frames</a>
+													<a href="shop.php?frameType=Aviator Frames">Aviator Frames</a>
 												</li>
 												<li class="mb-1">
-													<a href="shop.html">Cat-Eye Frames</a>
+													<a href="shop.php?frameType=Cat-Eye Frames">Cat-Eye Frames</a>
 												</li>
 												<li class="mb-1">
-													<a href="shop.html">Rimless Frames</a>
+													<a href="shop.php?frameType=Rimless Frames">Rimless Frames</a>
 												</li>
 												<li class="mb-1">
-													<a href="shop.html">Halfrim Frames</a>
+													<a href="shop.php?frameType=Halfrim Frames">Halfrim Frames</a>
 												</li>
 												<li class="mb-1">
-													<a href="shop.html">Geometric Frames</a>
+													<a href="shop.php?frameType=Geometric Frames">Geometric
+														Frames</a>
 												</li>
 											</ul>
-											
+
 
 										</div>
-										
+
 									</div>
 									<hr>
 								</li>
 							</ul>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true"
-							    aria-expanded="false">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button"
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								Sunglasses
 							</a>
 							<ul class="dropdown-menu mega-menu ">
@@ -228,66 +238,74 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											<h6> Select Category </h6>
 											<ul>
 												<li class="media-mini mt-3">
-													<a href="men.html">
-														<img src="images/man-s.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50%;">
+													<a href="men.php?product=sunglass">
+														<img src="images/man-s.jpg" alt=""
+															style="width: 50px; height: 50px; border-radius: 50%;">
 														MEN
 													</a>
 												</li>
-												<hr>												
+												<hr>
 												<li class="">
-													<a href="woman.html">
-														<img src="images/woman-s.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50%;">
+													<a href="women.php?product=sunglass">
+														<img src="images/woman-s.jpg" alt=""
+															style="width: 50px; height: 50px; border-radius: 50%;">
 														WOMEN
 													</a>
-												</li><hr>
+												</li>
+												<hr>
 												<li>
-													<a href="kids.html">
-														<img src="images/kid-s.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50%;">
+													<a href="kids.php?product=sunglass">
+														<img src="images/kid-s.jpg" alt=""
+															style="width: 50px; height: 50px; border-radius: 50%;">
 														KIDS
 													</a>
 												</li>
-												
-												
+
+
 											</ul>
 										</div>
-										
+
 										<div class="col-md-4 media-list span4 text-left mb-4">
 											<h6> Frame Type </h6>
 											<ul>
 												<li class="media-mini mt-3 mb-1">
 
-													<a href="shop.html">Rectangle Frames</a>
+													<a href="shop.php?frameType=Rectangle Frame">Rectangle
+														Frames</a>
 												</li>
 												<li class="mb-1">
-													<a href="shop.html">Wayfarer Frames</a>
+													<a href="shop.php?frameType=Wayfarer Frames">Wayfarer
+														Frames</a>
 												</li>
 												<li class="mb-1">
-													<a href="shop.html">Round Frames</a>
+													<a href="shop.php?frameType=Round Frames">Round Frames</a>
 												</li>
 												<li class="mb-1">
-													<a href="shop.html">Aviator Frames</a>
+													<a href="shop.php?frameType=Aviator Frames">Aviator Frames</a>
 												</li>
 												<li class="mb-1">
-													<a href="shop.html">Cat-Eye Frames</a>
+													<a href="shop.php?frameType=Cat-Eye Frames">Cat-Eye Frames</a>
 												</li>
 												<li class="mb-1">
-													<a href="shop.html">Rimless Frames</a>
+													<a href="shop.php?frameType=Rimless Frames">Rimless Frames</a>
 												</li>
 												<li class="mb-1">
-													<a href="shop.html">Halfrim Frames</a>
+													<a href="shop.php?frameType=Halfrim Frames">Halfrim Frames</a>
 												</li>
 												<li class="mb-1">
-													<a href="shop.html">Geometric Frames</a>
+													<a href="shop.php?frameType=Geometric Frames">Geometric
+														Frames</a>
 												</li>
 											</ul>
-											
+
 
 										</div>
 										<div class="col-md-4 media-list span4 text-left">
 
-											<h6 > <a class="text-danger" href="shop.html">Shop Now</a> </h6>
+											<h6> <a class="text-danger" href="shop.php?product=sunglass">Shop
+													Now</a> </h6>
 											<div class="media-mini mt-3">
-												<a href="shop.html">
+												<a href="shop.php">
 													<img src="images/sunglass-nav.jpg" class="img-fluid" alt="">
 												</a>
 											</div>
@@ -299,8 +317,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</ul>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true"
-							    aria-expanded="false">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button"
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								Computer glasses
 							</a>
 							<ul class="dropdown-menu mega-menu ">
@@ -310,66 +328,74 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											<h6> Select Category </h6>
 											<ul>
 												<li class="media-mini mt-3">
-													<a href="men.html">
-														<img src="images/man-s.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50%;">
+													<a href="men.php?product=computerglass">
+														<img src="images/man-s.jpg" alt=""
+															style="width: 50px; height: 50px; border-radius: 50%;">
 														MEN
 													</a>
 												</li>
-												<hr>												
+												<hr>
 												<li class="">
-													<a href="woman.html">
-														<img src="images/woman-s.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50%;">
+													<a href="women.php?product=computerglass">
+														<img src="images/woman-s.jpg" alt=""
+															style="width: 50px; height: 50px; border-radius: 50%;">
 														WOMEN
 													</a>
-												</li><hr>
+												</li>
+												<hr>
 												<li>
-													<a href="kids.html">
-														<img src="images/kid-s.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50%;">
+													<a href="kids.php?product=computerglass">
+														<img src="images/kid-s.jpg" alt=""
+															style="width: 50px; height: 50px; border-radius: 50%;">
 														KIDS
 													</a>
 												</li>
-												
-												
+
+
 											</ul>
 										</div>
-										
+
 										<div class="col-md-4 media-list span4 text-left mb-4">
 											<h6> Frame Type </h6>
 											<ul>
 												<li class="media-mini mt-3 mb-1">
 
-													<a href="shop.html">Rectangle Frames</a>
+													<a href="shop.php?frameType=Rectangle Frame">Rectangle
+														Frames</a>
 												</li>
 												<li class="mb-1">
-													<a href="shop.html">Wayfarer Frames</a>
+													<a href="shop.php?frameType=Wayfarer Frames">Wayfarer
+														Frames</a>
 												</li>
 												<li class="mb-1">
-													<a href="shop.html">Round Frames</a>
+													<a href="shop.php?frameType=Round Frames">Round Frames</a>
 												</li>
 												<li class="mb-1">
-													<a href="shop.html">Aviator Frames</a>
+													<a href="shop.php?frameType=Aviator Frames">Aviator Frames</a>
 												</li>
 												<li class="mb-1">
-													<a href="shop.html">Cat-Eye Frames</a>
+													<a href="shop.php?frameType=Cat-Eye Frames">Cat-Eye Frames</a>
 												</li>
 												<li class="mb-1">
-													<a href="shop.html">Rimless Frames</a>
+													<a href="shop.php?frameType=Rimless Frames">Rimless Frames</a>
 												</li>
 												<li class="mb-1">
-													<a href="shop.html">Halfrim Frames</a>
+													<a href="shop.php?frameType=Halfrim Frames">Halfrim Frames</a>
 												</li>
 												<li class="mb-1">
-													<a href="shop.html">Geometric Frames</a>
+													<a href="shop.php?frameType=Geometric Frames">Geometric
+														Frames</a>
 												</li>
 											</ul>
-											
+
 
 										</div>
 										<div class="col-md-4 media-list span4 text-left">
 
-											<h6 > <a class="text-danger" href="shop.html">Shop Now</a> </h6>
+											<h6> <a class="text-danger" href="shop.php?product=computerglass">Shop
+													Now</a> </h6>
 											<div class="media-mini mt-3">
-												<a href="shop.html">
+												<a href="shop.php">
 													<img src="images/computerglass-nav.jpg" class="img-fluid" alt="">
 												</a>
 											</div>
@@ -381,41 +407,41 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</ul>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true"
-							    aria-expanded="false">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button"
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								Contact lenses
 							</a>
 							<ul class="dropdown-menu mega-menu ">
 								<li>
 									<div class="row">
-										
-										
+
+
+										<!-- Disposability Links -->
 										<div class="col-md-6 media-list span4 text-left mb-4">
-											<h6> Disposablity </h6>
+											<h6> Disposability </h6>
 											<ul>
 												<li class="media-mini mt-3 mb-1">
-
-													<a href="shop.html">Daily Disposable</a>
-												</li><hr>
-												<li class="mb-1">
-													<a href="shop.html">Two Weekly Disposable</a>
-												</li><hr>
-												<li class="mb-1">
-													<a href="shop.html">Monthly Disposable</a>
-												</li><hr>
-												<li class="mb-1">
-													<a href="shop.html">Yearly Disposable</a>
+													<a href="lense.php?disposability=Daily">Daily Disposable</a>
 												</li>
-												
+												<li class="mb-1">
+													<a href="lense.php?disposability=TwoWeekly">Two Weekly
+														Disposable</a>
+												</li>
+												<li class="mb-1">
+													<a href="lense.php?disposability=Monthly">Monthly
+														Disposable</a>
+												</li>
+												<li class="mb-1">
+													<a href="lense.php?disposability=Yearly">Yearly Disposable</a>
+												</li>
 											</ul>
-											
-
 										</div>
+
 										<div class="col-md-6 media-list span4 text-left">
 
-											<h6 > <a class="text-danger" href="shop.html">Shop Now</a> </h6>
+											<h6> <a class="text-danger" href="lense.php">Shop Now</a> </h6>
 											<div class="media-mini mt-3">
-												<a href="shop.html">
+												<a href="shop.php">
 													<img src="images/contactlense-nav.jpg" class="img-fluid" alt="">
 												</a>
 											</div>
@@ -427,9 +453,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</ul>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="contact.html">Contact</a>
+							<a class="nav-link" href="contact.php">Contact</a>
 						</li>
-						
+
 					</ul>
 
 				</div>
@@ -480,7 +506,7 @@ $q1 = "SELECT * FROM `package`";
 $res1 = select($q1);
 
 foreach($res1 as $row1)
-$id=$row1['package_id'];
+$pid=$row1['package_id'];
 $title= $row1['title'];
 $package= $row1['package'];
 $prize= $row1['prize'];
@@ -538,8 +564,8 @@ $prize= $row1['prize'];
                             <p><?php echo $row1['title']; ?></p>
                             <p><?php echo $row1['package']; ?> <?php echo $row1['prize']; ?></p>
 							<input type="hidden" id="" name="package_id" value="<?php echo $id?>">
-                            <button class="btn btn-primary buy-now" data-package="<?php echo $row1['title']; ?> - <?php echo $row1['package']; ?> <?php echo $row1['prize'];?>" package_id="<?php echo $row1['package_id']; ?>">Buy now</button>
-                        </div>
+							<button class="btn btn-primary buy-now" data-package="<?php echo $row1['title']; ?> - <?php echo $row1['package']; ?> <?php echo $row1['prize'];?>" data-package-id="<?php echo $row1['package_id']; ?>">Buy now</button>
+</div>
                     </div>
                 <?php } ?>
             </div>
@@ -550,7 +576,7 @@ $prize= $row1['prize'];
     </div>
 </div>
 
-<textarea id="selectedPackage" name="package" rows="4" cols="50"></textarea>
+<input type="hidden" id="selectedPackage" name="package" rows="4" cols="50">
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
     $(document).ready(function() {
@@ -583,9 +609,10 @@ $prize= $row1['prize'];
     <div class="googles single-item singlepage">
      
 
-            <form action="add_cart.php?id=<?php echo $id; ?>&price=<?php echo $sprice; ?>" method="post">
+	<form action="add_cart.php?id=<?php echo $id; ?>" method="post">
                 <input type="hidden" name="id" value="<?php echo $id; ?>">
                 <input type="hidden" name="price" value="<?php echo $sprice; ?>">
+                <input type="hidden" id="hiddenPackageID" name="package_id" value="">
                 <button type="submit" name="submit" class="googles-cart pgoogles-cart p-3 px-5 w-100">
                     Add to Cart
                 </button>

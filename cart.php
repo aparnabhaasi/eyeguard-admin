@@ -1,4 +1,6 @@
-<?php include 'userheader.php'?>
+<?php include 'userheader.php'
+?>
+
 <style>
     .icon-hover-primary:hover {
   border-color: #3b71ca !important;
@@ -36,6 +38,9 @@ $user_id=$_SESSION['user_id'];
         $image= $row['product_image'];
         $price= $row['tot_amount'];
 		$p_amount = isset($row['prize']) ? $row['prize'] : '';
+		if(isset($_POST['apply'])){
+			
+		}
 		
 
     ?>
@@ -97,47 +102,99 @@ $user_id=$_SESSION['user_id'];
       </div><?php } ?>
       <!-- cart -->
       <!-- summary -->
-      <div class="col-lg-3">
-        <div class="card mb-3 border shadow-0">
-          <div class="card-body">
-            <form>
-              <div class="form-group">
-                <label class="form-label">Have coupon?</label>
-                <div class="input-group">
-                  <input type="text" class="form-control border" name="" placeholder="Coupon code" />
-                  <button class="btn btn-light border">Apply</button>
+      <?php
+$user_id = $_SESSION['user_id'];
+
+// Fetch cart items
+$qq = "SELECT * FROM tbl_childcart
+        INNER JOIN tbl_mastcart USING(mastcart_id)
+        INNER JOIN product USING(product_id)
+        INNER JOIN package USING(package_id)
+        WHERE user_id='$user_id'";
+$qqs = select($qq);
+
+// Initialize variables
+$totalPrice = 0;
+
+foreach ($qqs as $row) {
+    $totalPrice += isset($row['prize']) ? $row['prize'] : 0;
+}
+
+// Apply discount if coupon is applied
+if (isset($_POST['apply'])) {
+    $couponCode = $_POST['coupon_code'];
+
+    // Fetch discount percentage from the 'offer' table
+    $offerQuery = "SELECT percentage FROM offer WHERE offer_code = '$couponCode'";
+    $offerResult = select($offerQuery);
+
+    if ($offerResult && isset($offerResult[0]['percentage'])) {
+        $discountPercentage = $offerResult[0]['percentage'];
+
+        // Calculate discount amount
+        $discountAmount = ($totalPrice * $discountPercentage) / 100;
+
+        // Apply discount
+        $totalPrice -= $discountAmount;
+    }
+}
+?>
+
+<div class="col-lg-3">
+    <!-- Coupon Form -->
+    <div class="card mb-3 border shadow-0">
+        <div class="card-body">
+            <form method="post" action="">
+                <div class="form-group">
+                    <label class="form-label">Have coupon?</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control border" name="coupon_code" placeholder="Coupon code" />
+                        <button type="submit" name="apply" class="btn btn-light border">Apply</button>
+                    </div>
                 </div>
-              </div>
             </form>
-          </div>
         </div>
-        <div class="card shadow-0 border">
-          <div class="card-body">
+    </div>
+
+    <!-- Summary -->
+    <div class="card shadow-0 border">
+        <div class="card-body">
+            <!-- Display Total Price -->
             <div class="d-flex justify-content-between">
-              <p class="mb-2" style="color:black">Total price:</p>
-              <p class="mb-2" style="color:black"><?php echo $p_amount; ?></p>
-            </div>
-            <div class="d-flex justify-content-between">
-              <p class="mb-2">Discount:</p>
-              <p class="mb-2 text-success"></p>
-            </div>
-            <div class="d-flex justify-content-between">
-              <p class="mb-2">TAX:</p>
-              <p class="mb-2">$14.00</p>
-            </div>
-            <hr />
-            <div class="d-flex justify-content-between">
-              <p class="mb-2" style="color:black">Total price:</p>
-              <p class="mb-2 fw-bold" style="color:black"><?php echo $p_amount; ?></p>
+                <p class="mb-2" style="color:black">Total price:</p>
+                <p class="mb-2" style="color:black"><?php echo $totalPrice; ?></p>
             </div>
 
-            <div class="mt-3">
-              <a href="checkout.php?mid=<?php echo $mid; ?>" class="btn btn-success w-100 shadow-0 mb-2"> Make Purchase </a>
-              <a href="#" class="btn btn-light w-100 border mt-2"> Back to shop </a>
+            <!-- Display Discount (if applied) -->
+            <?php if (isset($discountAmount)) : ?>
+                <div class="d-flex justify-content-between">
+                    <p class="mb-2">Discount:</p>
+                    <p class="mb-2 text-success"><?php echo $discountAmount; ?></p>
+                </div>
+            <?php endif; ?>
+
+            <!-- Display TAX -->
+            <div class="d-flex justify-content-between">
+                <p class="mb-2">TAX:</p>
+                <p class="mb-2">$14.00</p>
             </div>
-          </div>
+            <hr />
+
+            <!-- Display Final Total -->
+            <div class="d-flex justify-content-between">
+                <p class="mb-2" style="color:black">Total price:</p>
+                <p class="mb-2 fw-bold" style="color:black"><?php echo $totalPrice; ?></p>
+            </div>
+
+            <!-- Purchase and Back to Shop Buttons -->
+            <div class="mt-3">
+                <a href="checkout.php?mid=<?php echo $mid; ?>" class="btn btn-success w-100 shadow-0 mb-2"> Make Purchase </a>
+                <a href="#" class="btn btn-light w-100 border mt-2"> Back to shop </a>
+            </div>
         </div>
-      </div>
+    </div>
+</div>
+
     
       <!-- summary -->
     </div>
